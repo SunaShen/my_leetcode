@@ -70,7 +70,8 @@ public:
     }
 };
 
-//TODO
+//n逐渐减小。
+//直到n<=m结束
 class Solution {
 public:
     int rangeBitwiseAnd(int m, int n) {

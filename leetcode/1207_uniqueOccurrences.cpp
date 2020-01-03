@@ -80,7 +80,7 @@ public:
         memset(cnt2,0,sizeof(cnt2));
         for(auto i:arr) cnt1[i+1000]++;
         for(auto j:cnt1) cnt2[j]++;
-        //注意不能从k=0，开始，英文cnt2中好多0哇。
+        //注意不能从k=0，开始，因为cnt2中好多0哇。
         for(int k=1;k<=1000;k++) if(cnt2[k]>1) return false;
         return true;
     }
