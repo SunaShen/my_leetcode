@@ -58,6 +58,9 @@
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[C++](./leetcode/136_singleNumber.cpp)|简单|位操作|
 |137|[只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)|[C++](./leetcode/137_singleNumber.cpp)|中等|位操作(三进制半加器)|
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[C++](./leetcode/144_preorderTraversal.cpp)|中等|递归法、迭代法|
+|150|[波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)|[C++](./leetcode/150_evalRPN.cpp)|中等|栈|
+|151|[翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|[C++](./leetcode/151_reverseWords.cpp)|中等|反转、原址操作|
+|153|[寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)|[C++](./leetcode/153_findMin.cpp)|中等|二分法|
 |169|[求众数](https://leetcode-cn.com/problems/majority-element/)|[C++](./leetcode/169_majorityElement.cpp)|简单|投票法|
 |198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|[C++](./leetcode/198_rob.cpp)|简单|dp|
 |201|[数字范围按位与](https://leetcode-cn.com/problems/bitwise-and-of-numbers-range/solution/)|[C++](./leetcode/201_rangeBitwiseAnd.cpp)|中等|位操作|
@@ -67,10 +70,12 @@
 |240|[搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|[C++](./leetcode/240_searchMatrix.cpp)|中等|二分法、副对角线|
 |260|[只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/solution/)|[C++](./leetcode/260_singleNumber.cpp)|中等|位操作|
 |300|[最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)|[C++](./leetcode/300_lengthOfLIS.cpp)|中等|dp|
+|322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|[C++](./leetcode/322_coinChange.cpp)|中等|dp|
 |337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|[C++](./leetcode/337_rob.cpp)|中等|树状dp|
 |343|[整数拆分](https://leetcode-cn.com/problems/integer-break/)|[C++](./leetcode/343_integerBreak.cpp)|中等|dp、贪心|
 |347|[前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|[C++](./leetcode/347_topKFrequent.cpp)|中等|哈希+排序、堆|
 |372|[超级次方](https://leetcode-cn.com/problems/super-pow/)|[C++](./leetcode/372_superPow.cpp)|中等|幂运算、取模|
+|450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |1170|[比较字符串中最小字母出现频次](https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[C++](./leetcode/1170_numSmallerByFrequency.cpp)|简单||
 |1207|[独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/)|[C++](./leetcode/1207_uniqueOccurrences.cpp)|简单||
