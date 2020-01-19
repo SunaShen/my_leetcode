@@ -42,6 +42,7 @@
 |82|[删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)|[C++](./leetcode/82_deleteDuplicates.cpp)|中等|双指针|
 |88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)|[C++](./leetcode/88_merge.cpp)|简单|双指针|
 |90|[子集 II](https://leetcode-cn.com/problems/subsets-ii/)|[C++](./leetcode/90_subsetsWithDup.cpp)|中等|回溯、位掩码|
+|91|[解码方法](https://leetcode-cn.com/problems/decode-ways/)|[C++](./leetcode/91_numDecodings.cpp)|中等|dp|
 |93|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/)|[C++](./leetcode/93_restoreIpAddresses.cpp)|中等|回溯法|
 |94|[中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)|[C++](./leetcode/94_inorderTraversal.cpp)|中等|递归法、迭代法|
 |95|[不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)|[C++](./leetcode/95_generateTrees.cpp)|中等|递归|
@@ -67,8 +68,15 @@
 |209|[长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)|[C++](./leetcode/209_minSubArrayLen.cpp)|中等|双指针|
 |213|[打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)|[C++](./leetcode/213_rob.cpp)|中等|dp|
 |215|[数组中第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[C++](./leetcode/215_findKthLargest.cpp)|中等|小顶堆、快排|
+|230|[二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)|[C++](./leetcode/230_kthSmallest.cpp)|中等|中序遍历+提前终止|
+|235|[二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[C++](./leetcode/235_lowestCommonAncestor.cpp)|简单|LCA|
+|236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](./leetcode/236_lowestCommonAncestor.cpp)|中等|递归(后序遍历)|
 |240|[搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|[C++](./leetcode/240_searchMatrix.cpp)|中等|二分法、副对角线|
 |260|[只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/solution/)|[C++](./leetcode/260_singleNumber.cpp)|中等|位操作|
+|263|[丑数](https://leetcode-cn.com/problems/ugly-number/submissions/)|[C++](./leetcode/263_isUgly.cpp)|简单|丑数|
+|264|[丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)|[C++](./leetcode/264_nthUglyNumber.cpp)|中等|三指针、dp|
+|274|[H指数](https://leetcode-cn.com/problems/h-index/)|[C++](./leetcode/274_hIndex.cpp)|中等|计数排序|
+|275|[H指数 II](https://leetcode-cn.com/problems/h-index-ii/)|[C++](./leetcode/275_hIndex.cpp)|中等|二分法|
 |300|[最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)|[C++](./leetcode/300_lengthOfLIS.cpp)|中等|dp|
 |322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|[C++](./leetcode/322_coinChange.cpp)|中等|dp|
 |337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|[C++](./leetcode/337_rob.cpp)|中等|树状dp|
