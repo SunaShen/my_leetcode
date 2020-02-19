@@ -50,6 +50,7 @@
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|[C++](./leetcode/98_isValidBST.cpp)|中等|中序遍历、递归|
 |102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|[C++](./leetcode/102_levelOrder.cpp)|中等|dfs、迭代(队列)|
 |104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[C++](./leetcode/104_maxDepth.cpp)|简单|递归|
+|105|[从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[C++](./leetcode/105_buildTree.cpp)|中等|恢复二叉树|
 |107|[二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)|[C++](./leetcode/107_levelOrderBottom.cpp)|简单|dfs、迭代(队列)|
 |111|[二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)|[C++](./leetcode/111_minDepth.cpp)|简单|递归、bfs、dfs|
 |112|[路径总和](https://leetcode-cn.com/problems/path-sum/)|[C++](./leetcode/112_hasPathSum.cpp)|简单||
@@ -84,6 +85,7 @@
 |347|[前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|[C++](./leetcode/347_topKFrequent.cpp)|中等|哈希+排序、堆|
 |372|[超级次方](https://leetcode-cn.com/problems/super-pow/)|[C++](./leetcode/372_superPow.cpp)|中等|幂运算、取模|
 |450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
+|509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/70_climbStairs.cpp)|简单|斐波那契数|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |1170|[比较字符串中最小字母出现频次](https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[C++](./leetcode/1170_numSmallerByFrequency.cpp)|简单||
 |1207|[独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/)|[C++](./leetcode/1207_uniqueOccurrences.cpp)|简单||
@@ -100,3 +102,21 @@
 |1267|[统计参与通信的服务器](https://leetcode-cn.com/problems/count-servers-that-communicate/)|[C++](./leetcode/1267_countServers.cpp)|中等||
 |1275|[找出井字棋的获胜者](https://leetcode-cn.com/problems/find-winner-on-a-tic-tac-toe-game/)|[C++](./leetcode/1275_tictactoe.cpp)|简单||
 |1276|[不浪费原料的汉堡制作方案](https://leetcode-cn.com/problems/number-of-burgers-with-no-waste-of-ingredients/)|[C++](./leetcode/1276_numOfBurgers.cpp)|中等||
+|1346|[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[C++](./leetcode/1346_checkIfExist.cpp)|简单||
+|1347|[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[C++](./leetcode/1347_minSteps.cpp)|中等|统计字符|
+|1348|[推文计数](https://leetcode-cn.com/problems/tweet-counts-per-frequency/)|[C++](./leetcode/1348_TweetCounts.cpp)|中等||
+|1349|[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[C++](./leetcode/1349_maxStudents.cpp)|困难|状态压缩、dp|
+
+# 剑指offer
+| 题号 | 题目 | 题解 | 难度 | 标签 |
+| :---- | :---- | :----: | :----:| :---: |
+|3|[面试题03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)|[C++](./剑指offer/3_findRepeatNumber.cpp)|简单|hash|
+|4|[面试题04. 二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)|[C++](./剑指offer/4_findNumberIn2DArray.cpp)|简单|标志数|
+|5|[面试题05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)|[C++](./剑指offer/5_replaceSpace.cpp)|简单||
+|6|[面试题06. 从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)|[C++](./剑指offer/6_reversePrint.cpp)|简单|辅助栈、递归|
+|7|[面试题07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)|[C++](./剑指offer/7_buildTree.cpp)|中等|恢复二叉树|
+|9|[面试题09. 用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|[C++](./剑指offer/9_CQueue.cpp)|简单|栈、队列|
+|10-1|[面试题10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)|[C++](./剑指offer/10-1_fib.cpp)|简单|斐波那契数|
+|10-2|[面试题10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)|[C++](./剑指offer/10-2_numWays.cpp)|简单|斐波那契数|
+
+
