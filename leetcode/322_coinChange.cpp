@@ -60,3 +60,47 @@ public:
         return dp[amount];
     }
 };
+
+//当前的回头找前面的来给自己更新 (可不可达都不知道)
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        vector<int> dp(amount+1,INT_MAX-1);
+        dp[0] = 0;
+        //i即为当前值，i需要他之前的以确定好的值来确定
+        for(int i=1;i<=amount;i++){
+            for(int j=0;j<coins.size();j++){
+                if(coins[j] <= i){
+                    //无法到达使用INT_MAX-1表示,防止其dp[i - coins[j]]+1时溢出
+                    dp[i] = min(dp[i],dp[i - coins[j]]+1);
+                }
+            }
+        }
+        return dp[amount] == INT_MAX-1 ? -1 : dp[amount];
+    }
+};
+
+//当前的更新后面可达的 (默认都保证了可达)
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        vector<int> dp(amount+1,INT_MAX);
+        //i为当前值，但是他是一只在更新他加一个硬币后的值。
+        dp[0] = 0;
+        for(int i=0;i<amount;i++){
+            //只有当前位置可达他后面的位置才可达
+            if(dp[i]!=INT_MAX){
+                for(int j=0;j<coins.size();j++){
+                    //会有INT_MAX大的金币，防止溢出
+                    long index = (long)i + coins[j];
+                    //超过总金额的不需要更新
+                    if(index <= amount){
+                        //dp[i]+1不会溢出，因为确定dp[i]!=INT_MAX
+                        dp[index] = min(dp[index],dp[i]+1);
+                    }
+                }
+            }
+        }
+        return dp[amount] == INT_MAX ? -1 : dp[amount];
+    }
+};
