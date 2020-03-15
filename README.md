@@ -51,6 +51,7 @@
 |95|[不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)|[C++](./leetcode/95_generateTrees.cpp)|中等|递归|
 |96|[不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)|[C++](./leetcode/96_numTrees.cpp)|中等|dp、卡塔兰数|
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|[C++](./leetcode/98_isValidBST.cpp)|中等|中序遍历、递归|
+|101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)|[C++](./leetcode/101_isSymmetric.cpp)|简单|递归、迭代(队列)|
 |102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|[C++](./leetcode/102_levelOrder.cpp)|中等|dfs、迭代(队列)|
 |104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[C++](./leetcode/104_maxDepth.cpp)|简单|递归|
 |105|[从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[C++](./leetcode/105_buildTree.cpp)|中等|恢复二叉树|
@@ -64,6 +65,7 @@
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[C++](./leetcode/136_singleNumber.cpp)|简单|位操作|
 |137|[只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)|[C++](./leetcode/137_singleNumber.cpp)|中等|位操作(三进制半加器)|
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[C++](./leetcode/144_preorderTraversal.cpp)|中等|递归法、迭代法|
+|145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[C++](./leetcode/145_postorderTraversal.cpp)|困难|递归、迭代|
 |146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[C++](./leetcode/146_LRUCache.cpp)|中等|map+双向链表|
 |150|[波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)|[C++](./leetcode/150_evalRPN.cpp)|中等|栈|
 |151|[翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|[C++](./leetcode/151_reverseWords.cpp)|中等|反转、原址操作|
@@ -78,6 +80,7 @@
 |213|[打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)|[C++](./leetcode/213_rob.cpp)|中等|dp|
 |215|[数组中第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[C++](./leetcode/215_findKthLargest.cpp)|中等|小顶堆、快排|
 |225|[用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)|[C++](./leetcode/225_MyStack.cpp)|简单|队列、栈|
+|226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)|[C++](./leetcode/226_invertTree.cpp)|简单||
 |230|[二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)|[C++](./leetcode/230_kthSmallest.cpp)|中等|中序遍历+提前终止|
 |235|[二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[C++](./leetcode/235_lowestCommonAncestor.cpp)|简单|LCA|
 |236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](./leetcode/236_lowestCommonAncestor.cpp)|中等|递归(后序遍历)|
@@ -98,9 +101,13 @@
 |503|[下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)|[C++](./leetcode/503_nextGreaterElements.cpp)|中等|单调栈|
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
 |543|[二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)|[C++](./leetcode/543_diameterOfBinaryTree.cpp)|简单|dfs|
+|695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
+|946|[验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)|[C++](./leetcode/946_validateStackSequences.cpp)|中等|模拟栈|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
+|1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
+|1071|[字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|[C++](./leetcode/1071_gcdOfStrings.cpp)|简单|gcd、str1+str2==str2+str1|
 |1103|[分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)|[C++](./leetcode/1103_distributeCandies.cpp)|简单|等差数列|
 |1170|[比较字符串中最小字母出现频次](https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[C++](./leetcode/1170_numSmallerByFrequency.cpp)|简单||
 |1207|[独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/)|[C++](./leetcode/1207_uniqueOccurrences.cpp)|简单||
@@ -148,6 +155,17 @@
 |面试题24|[反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)|[C++](./剑指offer/24_reverseList.cpp)|简单|双指针|
 |面试题25|[合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)|[C++](./剑指offer/25_mergeTwoLists.cpp)|简单|哑结点|
 |面试题26|[树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)|[C++](./剑指offer/26_isSubStructure.cpp)|中等|遍历+递归|
+|面试题27|[二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)|[C++](./剑指offer/27_mirrorTree.cpp)|简单|递归|
+|面试题28|[对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)|[C++](./剑指offer/28_isSymmetric.cpp)|简单|递归、迭代(队列)|
+|面试题29|[顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)|[C++](./剑指offer/29_spiralOrder.cpp)|简单|模拟边界|
+|面试题30|[包含min函数的栈](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)|[C++](./剑指offer/30_MinStack.cpp)|简单|辅助栈|
+|面试题31|[栈的压入、弹出序列](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)|[C++](./剑指offer/31_validateStackSequences.cpp)|中等|模拟栈|
+|面试题32 - I|[从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)|[C++](./剑指offer/32-1_levelOrder.cpp)|中等|队列|
+|面试题32 - II|[从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)|[C++](./剑指offer/32-2_levelOrder.cpp)|简单|队列|
+|面试题32 - III|[从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)|[C++](./剑指offer/32-3_levelOrder.cpp)|中等|双端队列|
+|面试题39|[数组中出现次数超过一半的数字](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)|[C++](./剑指offer/39_majorityElement.cpp)|简单|投票法|
+|面试题40|[最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)|[C++](./剑指offer/40_getLeastNumbers.cpp)|简单|小顶堆、快排思想|
+|面试题42|[连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)|[C++](./剑指offer/42_maxSubArray.cpp)|简单|贪心|
 |面试题59 - II|[队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)|[C++](./剑指offer/59-2_MaxQueue.cpp)|中等|辅助双端递减队列|
 |面试题57 - II|[和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)|[C++](./剑指offer/57-2_findContinuousSequence.cpp)|简单|双指针、队列|
 
