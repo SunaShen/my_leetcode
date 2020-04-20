@@ -68,7 +68,7 @@
  *             if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) return 0;
  *             if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) return 0;
  *
- * 方法二中，都当这数算，最后去负号。
+ * 方法二中，都当正数算，最后去负号。
  * 所以中间判断仅使用
  * if(ans > INT_MAX/10||(ans == INT_MAX/10 && a > 7))
  * 不算错。因为，因为若他为-2147483648，a>7默认返回INT_MIN就是它本身！！！！若是，越界返回0那就不行了哦。
@@ -165,6 +165,39 @@ public:
 //};
 
 
+// stringstream 提取第一段 空格区分
+class Solution {
+public:
+    int myAtoi(string str) {
+        stringstream stream(str);
+        string s;
+        stream>>s;
+        stream.clear();
+        int flag = 0;
+        int res = 0;
+        if(s[0]=='-'){
+            flag = 1;
+        }else if(s[0]=='+'){
+            flag = 0;
+        }else{
+            if(s[0]<'0'||s[0]>'9') return 0;
+            else{
+                res += s[0] - '0';
+            }
+        }
+        for(int i=1;i<s.size();i++){
+            if(s[i]<'0'||s[i]>'9'){
+                break;
+            }else{
+                int t = s[i] - '0';
+                if(res > INT_MAX/10||(res == INT_MAX/10 && t>7)) return flag ? INT_MIN:INT_MAX;
+                res *= 10;
+                res += t;
+            }
+        }
+        return flag ? -res:res;
+    }
+};
 
 int main()
 {

@@ -53,3 +53,96 @@ public:
         return 1 + max(maxDepth(root->left),maxDepth(root->right));
     }
 };
+
+//迭代
+//stack dfs
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        stack<pair<TreeNode*,int>> s;
+        int res = 0;
+        if(root) s.push(make_pair(root,1));
+        while(!s.empty()){
+            auto temp = s.top(); s.pop();
+            auto node = temp.first;
+            int dep = temp.second;
+            res = max(res,dep);
+            if(node->right){
+                s.push(make_pair(node->right,dep+1));
+            }
+            if(node->left){
+                s.push(make_pair(node->left,dep+1));
+            }
+        }
+        return res;
+    }
+};
+//queue bfs
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        queue<pair<TreeNode*,int>> q;
+        int res = 0;
+        if(root) q.push(make_pair(root,1));
+        while(!q.empty()){
+            auto temp = q.front(); q.pop();
+            auto node = temp.first;
+            int dep = temp.second;
+            res = max(res,dep);
+            if(node->left){
+                q.push(make_pair(node->left,dep+1));
+            }
+            if(node->right){
+                q.push(make_pair(node->right,dep+1));
+            }
+        }
+        return res;
+    }
+};
+//queue 层序遍历
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        queue<TreeNode*> q;
+        int res = 0;
+        if(root) q.push(root);
+        TreeNode* temp;
+        while(!q.empty()){
+            res++;
+            int len = q.size();
+            for(int i=0;i<len;i++){
+                temp = q.front(); q.pop();
+                if(temp->left) q.push(temp->left);
+                if(temp->right) q.push(temp->right);
+            }
+        }
+        return res;
+    }
+};
