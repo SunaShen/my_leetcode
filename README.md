@@ -43,6 +43,7 @@
 |61|[旋转链表](https://leetcode-cn.com/problems/rotate-list/)|[C++](./leetcode/61_rotateRight.cpp)|中等|循环链表|
 |62|[不同路径](https://leetcode-cn.com/problems/unique-paths/)|[C++](./leetcode/62_uniquePaths.cpp)|中等|组合数、dp|
 |63|[不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)|[C++](./leetcode/63_uniquePathsWithObstacles.cpp)|中等|dp|
+|64|[最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)|[C++](./leetcode/64_minPathSum.cpp)|中等|dp|
 |65|[有效数字](https://leetcode-cn.com/problems/valid-number/)|[C++](./leetcode/65_isNumber.cpp)|困难|分类|
 |66|[加一](https://leetcode-cn.com/problems/plus-one/)|[C++](./leetcode/66_plusOne.cpp)|简单|字符加法|
 |67|[二进制求和](https://leetcode-cn.com/problems/add-binary/)|[C++](./leetcode/67_addBinary.cpp)|简单|字符串二进制加法|
@@ -76,6 +77,7 @@
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[C++](./leetcode/121_maxProfit.cpp)|简单|单调栈|
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|[C++](./leetcode/122_maxProfit.cpp)|简单|单调栈、贪心|
 |129|[求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|[C++](./leetcode/129_sumNumbers.cpp)|中等|dfs|
+|130|[被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)|[C++](./leetcode/130_solve.cpp)|中等|dfs|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station/)|[C++](./leetcode/134_canCompleteCircuit.cpp)|中等|总油量最小值|
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[C++](./leetcode/136_singleNumber.cpp)|简单|位操作|
 |137|[只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)|[C++](./leetcode/137_singleNumber.cpp)|中等|位操作(三进制半加器)|
@@ -85,6 +87,7 @@
 |146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[C++](./leetcode/146_LRUCache.cpp)|中等|map+双向链表|
 |150|[波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)|[C++](./leetcode/150_evalRPN.cpp)|中等|栈|
 |151|[翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|[C++](./leetcode/151_reverseWords.cpp)|中等|反转、原址操作|
+|152|[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|[C++](./leetcode/152_maxProduct.cpp)|中等|max、min|
 |153|[寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)|[C++](./leetcode/153_findMin.cpp)|中等|二分法|
 |154|[寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[C++](./leetcode/154_findMin.cpp)|困难|二分法、递归|
 |160|[相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|[C++](./leetcode/160_getIntersectionNode.cpp)|简单|双指针|
@@ -93,6 +96,7 @@
 |179|[最大数](https://leetcode-cn.com/problems/largest-number/)|[C++](./leetcode/179_largestNumber.cpp)|中等|字符串排序|
 |191|[位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)|[C++](./leetcode/191_hammingWeight.cpp)|简单|x&x-1|
 |198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|[C++](./leetcode/198_rob.cpp)|简单|dp|
+|199|[二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)|[C++](./leetcode/199_rightSideView.cpp)|中等|dfs、bfs、层序遍历|
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)|[C++](./leetcode/200_numIslands.cpp)|中等|dfs|
 |201|[数字范围按位与](https://leetcode-cn.com/problems/bitwise-and-of-numbers-range/solution/)|[C++](./leetcode/201_rangeBitwiseAnd.cpp)|中等|位操作|
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[C++](./leetcode/206_reverseList.cpp)|简单|递归、迭代、栈|
@@ -115,6 +119,8 @@
 |264|[丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)|[C++](./leetcode/264_nthUglyNumber.cpp)|中等|三指针、dp|
 |274|[H指数](https://leetcode-cn.com/problems/h-index/)|[C++](./leetcode/274_hIndex.cpp)|中等|计数排序|
 |275|[H指数 II](https://leetcode-cn.com/problems/h-index-ii/)|[C++](./leetcode/275_hIndex.cpp)|中等|二分法|
+|279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|[C++](./leetcode/279_numSquares.cpp)|中等|dp|
+|283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|[C++](./leetcode/283_moveZeroes.cpp)|简单|双指针|
 |289|[生命游戏](https://leetcode-cn.com/problems/game-of-life/)|[C++](./leetcode/289_gameOfLife.cpp)|中等|搜索、位|
 |292|[Nim 游戏](https://leetcode-cn.com/problems/nim-game/)|[C++](./leetcode/292_canWinNim.cpp)|简单|博弈论、必胜态必败态|
 |295|[数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)|[C++](./leetcode/295_MedianFinder.cpp)|困难|大顶堆、小顶堆|
@@ -132,6 +138,7 @@
 |372|[超级次方](https://leetcode-cn.com/problems/super-pow/)|[C++](./leetcode/372_superPow.cpp)|中等|幂运算、取模|
 |400|[第N个数字](https://leetcode-cn.com/problems/nth-digit/)|[C++](./leetcode/400_findNthDigit.cpp)|中等|数学|
 |409|[最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)|[C++](./leetcode/409_longestPalindrome.cpp)|简单||
+|424|[替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|[C++](./leetcode/424_characterReplacement.cpp)|中等|滑动窗口|
 |445|[两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)|[C++](./leetcode/445_addTwoNumbers.cpp)|中等|反向链表、栈|
 |450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
 |460|[LFU缓存](https://leetcode-cn.com/problems/lfu-cache/)|[C++](./leetcode/460_LFUCache.cpp)|困难|map+两级链表|
@@ -139,10 +146,12 @@
 |496|[下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)|[C++](./leetcode/496_nextGreaterElement.cpp)|简单|单调栈|
 |503|[下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)|[C++](./leetcode/503_nextGreaterElements.cpp)|中等|单调栈|
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
+|518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|[C++](./leetcode/518_change.cpp)|中等|dp、循环顺序|
 |542|[01 矩阵](https://leetcode-cn.com/problems/01-matrix/)|[C++](./leetcode/542_updateMatrix.cpp)|中等|bfs、dp|
 |543|[二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)|[C++](./leetcode/543_diameterOfBinaryTree.cpp)|简单|dfs|
 |547|[朋友圈](https://leetcode-cn.com/problems/friend-circles/)|[C++](./leetcode/547_findCircleNum.cpp)|中等|并查集|
 |557|[反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)|[C++](./leetcode/557_reverseWords.cpp)|简单|swap|
+|560|[和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|[C++](./leetcode/560_subarraySum.cpp)|中等|前缀和、哈希|
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
@@ -156,6 +165,7 @@
 |945|[使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)|[C++](./leetcode/945_minIncrementForUnique.cpp)|中等|计数法、排序|
 |946|[验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)|[C++](./leetcode/946_validateStackSequences.cpp)|中等|模拟栈|
 |974|[和可被 K 整除的子数组](https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/)|[C++](./leetcode/974_subarraysDivByK.cpp)|中等|前缀和、线性同余|
+|983|[最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/)|[C++](./leetcode/983_mincostTickets.cpp)|中等|dp|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
 |999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
@@ -174,6 +184,7 @@
 |1219|[黄金矿工](https://leetcode-cn.com/problems/path-with-maximum-gold/)|[C++](./leetcode/1219_getMaximumGold.cpp)|中等|dfs|
 |1220|[统计元音字母序列的数目](https://leetcode-cn.com/problems/count-vowels-permutation/)|[C++](./leetcode/1220_countVowelPermutation.cpp)|困难|dp|
 |1232|[缀点成线](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/)|[C++](./leetcode/1232_checkStraightLine.cpp)|简单||
+|1248|[统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)|[C++](./leetcode/1248_numberOfSubarrays.cpp)|中等|滑动窗口、前缀和|
 |1260|[二维网格迁移](https://leetcode-cn.com/problems/shift-2d-grid/)|[C++](./leetcode/1260_shiftGrid.cpp)|简单|矩阵操作|
 |1261|[在受污染的二叉树中查找元素](https://leetcode-cn.com/problems/find-elements-in-a-contaminated-binary-tree/)|[C++](./leetcode/1261_FindElements.cpp)|中等||
 |1266|[访问所有点的最小时间](https://leetcode-cn.com/problems/minimum-time-visiting-all-points/)|[C++](./leetcode/1266_minTimeToVisitAllPoints.cpp)|简单|切比雪夫距离|
@@ -270,6 +281,7 @@
 | :---- | :---- | :----: | :----:| :---: |
 |面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](./程序员面试金典/1-6_compressString.cpp)|简单|字符串|
 |面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](./程序员面试金典/1-7_rotate.cpp)|中等|四分之一|
+|面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](./程序员面试金典/8-11_waysToChange.cpp)|中等|dp、循环顺序|
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
 |面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](./程序员面试金典/10-3_search.cpp)|中等|二分法|
 |面试题 16.03|[交点](https://leetcode-cn.com/problems/intersection-lcci/)|[C++](./程序员面试金典/16-3_intersection.cpp)|困难|数学|
