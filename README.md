@@ -171,6 +171,7 @@
 |999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
 |1071|[字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|[C++](./leetcode/1071_gcdOfStrings.cpp)|简单|gcd、str1+str2==str2+str1|
+|1095|[山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)|[C++](./leetcode/1095_findInMountainArray.cpp)|困难|二分法|
 |1103|[分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)|[C++](./leetcode/1103_distributeCandies.cpp)|简单|等差数列|
 |1111|[有效括号的嵌套深度](https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)|[C++](./leetcode/1111_maxDepthAfterSplit.cpp)|中等|嵌套深度奇偶|
 |1160|[拼写单词](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)|[C++](./leetcode/1160_countCharacters.cpp)|简单|map、vector|
