@@ -35,6 +35,7 @@
 |47|[全排列II](https://leetcode-cn.com/problems/permutations-ii/)|[C++](./leetcode/47_permuteUnique.cpp)|中等|回溯法|
 |48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|[C++](./leetcode/48_rotate.cpp)|中等|转置+反转、找规律|
 |50|[Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|[C++](./leetcode/50_myPow.cpp)|中等|二分法、快速幂|
+|51|[N皇后](https://leetcode-cn.com/problems/n-queens/)|[C++](./leetcode/51_solveNQueens.cpp)|困难|回溯法|
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[C++](./leetcode/53_maxSubArray.cpp)|简单|dp、贪心|
 |54|[螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)|[C++](./leetcode/54_spiralOrder.cpp)|中等|模拟边界|
 |55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)|[C++](./leetcode/55_canJump.cpp)|中等|dp、贪心|
@@ -59,6 +60,7 @@
 |84|[柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)|[C++](./leetcode/84_largestRectangleArea.cpp)|困难|单调栈、双哨兵|
 |90|[子集 II](https://leetcode-cn.com/problems/subsets-ii/)|[C++](./leetcode/90_subsetsWithDup.cpp)|中等|回溯、位掩码|
 |91|[解码方法](https://leetcode-cn.com/problems/decode-ways/)|[C++](./leetcode/91_numDecodings.cpp)|中等|dp|
+|92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)|[C++](./leetcode/92_reverseBetween.cpp)|中等|头插法|
 |93|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/)|[C++](./leetcode/93_restoreIpAddresses.cpp)|中等|回溯法|
 |94|[中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)|[C++](./leetcode/94_inorderTraversal.cpp)|中等|递归法、迭代法|
 |95|[不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)|[C++](./leetcode/95_generateTrees.cpp)|中等|递归|
@@ -99,6 +101,7 @@
 |199|[二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)|[C++](./leetcode/199_rightSideView.cpp)|中等|dfs、bfs、层序遍历|
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)|[C++](./leetcode/200_numIslands.cpp)|中等|dfs|
 |201|[数字范围按位与](https://leetcode-cn.com/problems/bitwise-and-of-numbers-range/solution/)|[C++](./leetcode/201_rangeBitwiseAnd.cpp)|中等|位操作|
+|202|[快乐数](https://leetcode-cn.com/problems/happy-number/)|[C++](./leetcode/202_isHappy.cpp)|简单|判断是否有环|
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[C++](./leetcode/206_reverseList.cpp)|简单|递归、迭代、栈|
 |209|[长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)|[C++](./leetcode/209_minSubArrayLen.cpp)|中等|双指针|
 |213|[打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)|[C++](./leetcode/213_rob.cpp)|中等|dp|
