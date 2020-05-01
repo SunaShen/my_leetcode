@@ -28,8 +28,10 @@
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|[C++](./leetcode/26_removeDuplicates.cpp)|简单|双指针|
 |28|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[C++](./leetcode/28_strStr.cpp)|简单|KMP|
 |31|[下一个排列](https://leetcode-cn.com/problems/next-permutation/)|[C++](./leetcode/31_nextPermutation.cpp)|中等||
+|32|[最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)|[C++](./leetcode/32_longestValidParentheses.cpp)|困难|dp、栈、计数|
 |33|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|[C++](./leetcode/33_search.cpp)|中等|二分法、三异或|
 |34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[C++](./leetcode/34_searchRange.cpp)|中等|二分法|
+|36|[有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)|[C++](./leetcode/36_isValidSudoku.cpp)|中等|记录行、列、九宫格|
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[C++](./leetcode/42_trap.cpp)|困难|双指针、单调栈|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./leetcode/46_permute.cpp)|中等|回溯法|
 |47|[全排列II](https://leetcode-cn.com/problems/permutations-ii/)|[C++](./leetcode/47_permuteUnique.cpp)|中等|回溯法|
