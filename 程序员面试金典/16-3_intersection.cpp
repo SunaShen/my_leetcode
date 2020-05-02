@@ -35,7 +35,6 @@
 
     坐标绝对值不会超过 2^7
     输入的坐标均是有效的二维坐标
-    通过次数2,049提交次数4,019
 
     来源：力扣（LeetCode）
     链接：https://leetcode-cn.com/problems/intersection-lcci
@@ -47,6 +46,44 @@
  * 数学劝退。。
  *
  * https://leetcode-cn.com/problems/intersection-lcci/solution/c-yi-ban-shi-qiu-jiao-dian-by-time-limit/
+ *
+ * 判断两条直线是否平行，斜率是否相等
+ * 1.平行 两条线重合或没有交点
+ *   不重合，没有交点返回空。
+ *   重合，返回重合点中x坐标最小的值。那么返回值必定在两条线段的四个端点处取得。
+ *   分别判断当前端点是否在另一个线段之间。
+ *   最终按x坐标排序返回结果。
+ *
+ * 2.不平行 肯定有交点
+ *   判断交点是否在同时在两条线段之间，如果是返回结果，否则返回空。
+ *
+ * 判断两条线是否平行：
+ *   斜率k1 = dy1/dx1; 斜率k2 = dy2/dx2;
+ *   平行时，k1==k2.
+ *   防止斜率不存在情况。转换成乘法
+ *   判断dx1*dy2 == dx2*dy1是否满足
+ *
+ * 判断点是否在另一个线段之间：
+ *   求当前点到线段两端点的线段和，如果线段和与线段长度相等，那么三个点共线且当前点在线段之间。
+ *
+ * 由线段上两个点求直线一般式方程参数：
+ *   直线一般式方程 Ax + By + C = 0;
+ *   直线上两个点P1(x1,y1),P2(x2,y2)
+ *   则有，A = y2 - y1; B = x1 - x2; C = x2*y1 - x1*y2;
+ *
+ * 不平行的两条线使用一般式方程参数求交点：
+ *   设交点为(x,y)
+ *   两条线段的一般式满足：
+ *   A1*x + B1*y + C1 = 0;-----------(1)
+ *   A2*x + B2*y + C2 = 0;-----------(2)
+ *   对(1)式乘A2，对(2)式乘A1,得：
+ *   A2*A1*x + A2*B1*y + A2*C1 = 0;
+ *   A1*A2*x + A1*B2*y + A1*C2 = 0;
+ *   两式相减得：
+ *   y = (A2*C1 - A1*C2)/(A1*B2 - A2*B1);
+ *   同理可得：
+ *   x = (B1*C2 - B2*C1)/(A1*B2 - A2*B1);
+ *
  *
  */
 
@@ -68,6 +105,7 @@ public:
     }
     vector<double> getIntersectionOfParallelLine(vector<int> &s1, vector<int> &e1, vector<int> &s2, vector<int> &e2) {
         vector<vector<double>> res;
+        //分别判断四个端点是否在另一个线段之间
         if(isPointInLine(s1, s2, e2)) {
             res.push_back(vector<double>{double(s1[0]), double(s1[1])});
         }
@@ -103,6 +141,10 @@ public:
         int dx2 = end2[0] - start2[0];
         int dy2 = end2[1] - start2[1];
 
+        //斜率k1 = dy1/dx1;
+        //斜率k2 = dy2/dx2;
+        //平行时，k1==k2.
+        //防止斜率不存在情况。转换成乘法，判断dx1*dy2 == dx2*dy1是否满足
         if(dx1*dy2 == dx2*dy1) {    //平行
             return getIntersectionOfParallelLine(start1, end1, start2, end2);
         }
@@ -111,7 +153,7 @@ public:
         vector<double> p1 = getParam(start1, end1);
         vector<double> p2 = getParam(start2, end2);
 
-        //求交点
+        //根据方程一般式参数A,B,C，求交点
         double x = double(p2[2]*p1[1] - p1[2]*p2[1]) / double(p1[0]*p2[1] - p2[0]*p1[1]);
         double y = double(p1[2]*p2[0] - p2[2]*p1[0]) / double(p1[0]*p2[1] - p2[0]*p1[1]);
 

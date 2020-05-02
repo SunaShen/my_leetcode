@@ -43,7 +43,7 @@
  * 在中序遍历中找到与前序遍历中第一个值对应的位置。
  * 该位置的左面为当前根的整个左子树的元素，该位置的右面是当前根的整个右子树元素。
  * 中序遍历遍历以根为界限，拆分成两部分。 前序遍历根据中序遍历的左右子树元素个数，按照顺序也分成两部分，变成两个前序遍历。
- * 其中拆分后的每个前序遍历的第一个值仍未对应中序遍历的子树的根。
+ * 其中拆分后的每个前序遍历的第一个值仍为对应中序遍历的子树的根。
  *
  * 使用递归。
  * 依次执行。
@@ -68,6 +68,12 @@
 class Solution {
 public:
     TreeNode* func(vector<int>& preorder, vector<int>& inorder, int index, int left, int right){
+
+        //index为preorder的索引
+        //left和right为inorder的索引
+        //temp也为inorder的索引，由inorder[temp] == preorder[index];
+
+
         if(left > right) return NULL;  //left == right 可以执行，只剩最后一个元素，他是叶子节点，左右子树都为null。
         TreeNode* root = new TreeNode(preorder[index]); //前序遍历的第一个值为根节点。
         int temp = left;
@@ -82,5 +88,37 @@ public:
     }
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         return func(preorder,inorder,0,0,preorder.size()-1);
+    }
+};
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* func(vector<int>& preorder, vector<int>& inorder,int i1,int j1,int i2,int j2){
+
+        //i1,j1为preorder当前考虑范围
+        //i2,j2为inorder当前考虑范围
+        //index为inorder中索引，有inorder[index]==preorder[i1];
+
+        if(i1>j1||i2>j2) return nullptr;
+
+        TreeNode* root = new TreeNode(preorder[i1]);
+        int index = i2;
+        while(inorder[index]!=preorder[i1]) index++;
+        //index是inorder的坐标，给preorder用的话需要转换
+        root->left = func(preorder,inorder,i1+1,i1+(index-i2),i2,index-1);
+        root->right = func(preorder,inorder,i1+(index-i2)+1,j1,index+1,j2);
+        return root;
+    }
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        return func(preorder,inorder,0,preorder.size()-1,0,inorder.size()-1);
     }
 };
