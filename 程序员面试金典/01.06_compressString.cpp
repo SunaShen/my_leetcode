@@ -1,4 +1,4 @@
-// @File   : 1-6_compressString.cpp
+// @File   : 01.06_compressString.cpp
 // @Source : https://leetcode-cn.com/problems/compress-string-lcci/
 // @Title  : 面试题 01.06. 字符串压缩
 // @Auther : sun_ds

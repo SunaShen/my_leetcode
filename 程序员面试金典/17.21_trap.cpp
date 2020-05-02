@@ -1,4 +1,4 @@
-// @File   : 17-21_trap.cpp
+// @File   : 17.21_trap.cpp
 // @Source : https://leetcode-cn.com/problems/volume-of-histogram-lcci/
 // @Title  : 面试题 17.21. 直方图的水量
 // @Auther : sun_ds

@@ -285,12 +285,12 @@
 # 程序员面试金典
 | 题号 | 题目 | 题解 | 难度 | 标签 |
 | :---- | :---- | :----: | :----:| :---: |
-|面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](./程序员面试金典/1-6_compressString.cpp)|简单|字符串|
-|面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](./程序员面试金典/1-7_rotate.cpp)|中等|四分之一|
-|面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](./程序员面试金典/8-11_waysToChange.cpp)|中等|dp、循环顺序|
+|面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](程序员面试金典/01.06_compressString.cpp)|简单|字符串|
+|面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](程序员面试金典/01.07_rotate.cpp)|中等|四分之一|
+|面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](程序员面试金典/08.11_waysToChange.cpp)|中等|dp、循环顺序|
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
-|面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](./程序员面试金典/10-3_search.cpp)|中等|二分法|
-|面试题 16.03|[交点](https://leetcode-cn.com/problems/intersection-lcci/)|[C++](./程序员面试金典/16-3_intersection.cpp)|困难|数学|
+|面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](程序员面试金典/10.03_search.cpp)|中等|二分法|
+|面试题 16.03|[交点](https://leetcode-cn.com/problems/intersection-lcci/)|[C++](程序员面试金典/16.03_intersection.cpp)|困难|数学|
 |面试题 16.25|[LRU缓存](https://leetcode-cn.com/problems/lru-cache-lcci/)|[C++](./程序员面试金典/16.25_LRUCache.cpp)|困难|map+双向链表|
-|面试题 17.16|[按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/)|[C++](./程序员面试金典/17-16_massage.cpp)|简单|dp|
-|面试题 17.21|[直方图的水量](https://leetcode-cn.com/problems/volume-of-histogram-lcci/)|[C++](./程序员面试金典/17-21_trap.cpp)|困难|单调栈、dp|
+|面试题 17.16|[按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/)|[C++](程序员面试金典/17.16_massage.cpp)|简单|dp|
+|面试题 17.21|[直方图的水量](https://leetcode-cn.com/problems/volume-of-histogram-lcci/)|[C++](程序员面试金典/17.21_trap.cpp)|困难|单调栈、dp|

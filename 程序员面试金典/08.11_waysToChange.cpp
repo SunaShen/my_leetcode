@@ -1,4 +1,4 @@
-// @File   : 8-11_waysToChange.cpp
+// @File   : 08.11_waysToChange.cpp
 // @Source : https://leetcode-cn.com/problems/coin-lcci/
 // @Title  : 面试题 08.11. 硬币
 // @Auther : sun_ds

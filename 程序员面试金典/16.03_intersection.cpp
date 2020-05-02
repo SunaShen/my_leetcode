@@ -1,4 +1,4 @@
-// @File   : 16-3_intersection.cpp
+// @File   : 16.03_intersection.cpp
 // @Source : https://leetcode-cn.com/problems/intersection-lcci/
 // @Title  : 面试题 16.03. 交点
 // @Auther : sun_ds
