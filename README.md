@@ -152,11 +152,13 @@
 |503|[下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)|[C++](./leetcode/503_nextGreaterElements.cpp)|中等|单调栈|
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
 |518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|[C++](./leetcode/518_change.cpp)|中等|dp、循环顺序|
+|535|[TinyURL 的加密与解密](https://leetcode-cn.com/problems/encode-and-decode-tinyurl/)|[C++](./leetcode/535_TinyURL.cpp)|中等|62进制|
 |542|[01 矩阵](https://leetcode-cn.com/problems/01-matrix/)|[C++](./leetcode/542_updateMatrix.cpp)|中等|bfs、dp|
 |543|[二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)|[C++](./leetcode/543_diameterOfBinaryTree.cpp)|简单|dfs|
 |547|[朋友圈](https://leetcode-cn.com/problems/friend-circles/)|[C++](./leetcode/547_findCircleNum.cpp)|中等|并查集|
 |557|[反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)|[C++](./leetcode/557_reverseWords.cpp)|简单|swap|
 |560|[和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|[C++](./leetcode/560_subarraySum.cpp)|中等|前缀和、哈希|
+|693|[交替位二进制数](https://leetcode-cn.com/problems/binary-number-with-alternating-bits/)|[C++](./leetcode/693_hasAlternatingBits.cpp)|简单|位运算|
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
@@ -178,6 +180,7 @@
 |1071|[字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|[C++](./leetcode/1071_gcdOfStrings.cpp)|简单|gcd、str1+str2==str2+str1|
 |1095|[山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)|[C++](./leetcode/1095_findInMountainArray.cpp)|困难|二分法|
 |1103|[分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)|[C++](./leetcode/1103_distributeCandies.cpp)|简单|等差数列|
+|1106|[解析布尔表达式](https://leetcode-cn.com/problems/parsing-a-boolean-expression/)|[C++](./leetcode/1106_parseBoolExpr.cpp)|困难|栈、')'开始计算|
 |1111|[有效括号的嵌套深度](https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)|[C++](./leetcode/1111_maxDepthAfterSplit.cpp)|中等|嵌套深度奇偶|
 |1160|[拼写单词](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)|[C++](./leetcode/1160_countCharacters.cpp)|简单|map、vector|
 |1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)|[C++](./leetcode/1162_maxDistance.cpp)|中等|bfs|
