@@ -33,6 +33,7 @@
 |34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[C++](./leetcode/34_searchRange.cpp)|中等|二分法|
 |36|[有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)|[C++](./leetcode/36_isValidSudoku.cpp)|中等|记录行、列、九宫格|
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[C++](./leetcode/42_trap.cpp)|困难|双指针、单调栈|
+|45|[跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)|[C++](./leetcode/45_jump.cpp)|困难|贪心|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./leetcode/46_permute.cpp)|中等|回溯法|
 |47|[全排列II](https://leetcode-cn.com/problems/permutations-ii/)|[C++](./leetcode/47_permuteUnique.cpp)|中等|回溯法|
 |48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|[C++](./leetcode/48_rotate.cpp)|中等|转置+反转、找规律|
@@ -290,6 +291,7 @@
 | :---- | :---- | :----: | :----:| :---: |
 |面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](./程序员面试金典/01.06_compressString.cpp)|简单|字符串|
 |面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](./程序员面试金典/01.07_rotate.cpp)|中等|四分之一|
+|面试题 05.06|[整数转换](https://leetcode-cn.com/problems/convert-integer-lcci/)|[C++](./程序员面试金典/05.06_convertInteger.cpp)|简单|temp&-temp、temp&temp-1|
 |面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](./程序员面试金典/08.11_waysToChange.cpp)|中等|dp、循环顺序|
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
 |面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](./程序员面试金典/10.03_search.cpp)|中等|二分法|
