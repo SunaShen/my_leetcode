@@ -46,10 +46,15 @@
  *  maxleft >= maxright r--
  *  每次先计算列上水量，然后就收缩。
  *
+ *  小的向里收缩，则此时小的值(maxleft或者maxright) - height必定是水量高度。因为另一侧有比自己更大的值能够当边界。
+ *  类似 11. 盛最多水的容器 双指针思想
+ *
  *
  *
  * 4.单调栈
  * 构造单调递减栈。如果当前高度比栈顶低就入栈，如果当前高度比栈顶高，就将栈中元素出栈，则其中定有凹槽，统计盛水量。
+ * 输入的值为栈顶右边第一个比自己大的值，栈顶前面一个元素为栈顶左边第一个比自己大的值，形成了凹槽，统计水量。
+ * 统计完水量之后，栈顶就被出栈了，此时栈中只有栈顶左端和右端比自己大的值，栈顶处相当于被填平了。
  * 复杂度O(N)
  *
  *
@@ -138,6 +143,8 @@ public:
         while (left <= right){
             maxleft = max(height[left],maxleft);
             maxright = max(height[right],maxright);
+            //小的向里收缩，则此时小的值(maxleft或者maxright) - height必定是水量高度。因为另一侧有比自己更大的值能够当边界。
+            //类似 11. 盛最多水的容器 思想
             if(maxleft < maxright){
                 ans += maxleft - height[left];
                 left++;
@@ -164,6 +171,7 @@ public:
                 temp = s.top();
                 s.pop();
                 if(!s.empty()){
+                    //此时，height[s.top()]为temp左边的第一个比自己大的值，height[i]为temp右边第一个比自己大的值，有凹槽。
                     res += (min(height[s.top()],height[i]) - height[temp])*(i - s.top() - 1);
                 }
             }
