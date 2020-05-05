@@ -163,6 +163,7 @@
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
+|824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
 |836|[矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)|[C++](./leetcode/836_isRectangleOverlap.cpp)|简单|考虑不重叠|
 |860|[柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)|[C++](./leetcode/860_lemonadeChange.cpp)|简单|模拟|
 |876|[链表的中间节点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)|[C++](./leetcode/876_middleNode.cpp)|简单|快慢指针|
@@ -291,6 +292,7 @@
 | :---- | :---- | :----: | :----:| :---: |
 |面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](./程序员面试金典/01.06_compressString.cpp)|简单|字符串|
 |面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](./程序员面试金典/01.07_rotate.cpp)|中等|四分之一|
+|面试题 02.05|[链表求和](https://leetcode-cn.com/problems/sum-lists-lcci/)|[C++](./程序员面试金典/02.05_addTwoNumbers.cpp)|简单|链表求和|
 |面试题 05.06|[整数转换](https://leetcode-cn.com/problems/convert-integer-lcci/)|[C++](./程序员面试金典/05.06_convertInteger.cpp)|简单|temp&-temp、temp&temp-1|
 |面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](./程序员面试金典/08.11_waysToChange.cpp)|中等|dp、循环顺序|
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
