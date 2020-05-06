@@ -149,6 +149,7 @@
 |450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
 |460|[LFU缓存](https://leetcode-cn.com/problems/lfu-cache/)|[C++](./leetcode/460_LFUCache.cpp)|困难|map+两级链表|
 |466|[统计重复个数](https://leetcode-cn.com/problems/count-the-repetitions/)|[C++](./leetcode/466_getMaxRepetitions.cpp)|困难|循环节、map|
+|468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/)|[C++](./leetcode/468_validIPAddress.cpp)|中等|字符串|
 |496|[下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)|[C++](./leetcode/496_nextGreaterElement.cpp)|简单|单调栈|
 |503|[下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)|[C++](./leetcode/503_nextGreaterElements.cpp)|中等|单调栈|
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
@@ -203,6 +204,7 @@
 |1275|[找出井字棋的获胜者](https://leetcode-cn.com/problems/find-winner-on-a-tic-tac-toe-game/)|[C++](./leetcode/1275_tictactoe.cpp)|简单||
 |1276|[不浪费原料的汉堡制作方案](https://leetcode-cn.com/problems/number-of-burgers-with-no-waste-of-ingredients/)|[C++](./leetcode/1276_numOfBurgers.cpp)|中等||
 |1277|[统计全为 1 的正方形子矩阵](https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/)|[C++](./leetcode/1277_countSquares.cpp)|中等|dp|
+|1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|[C++](./leetcode/1290_getDecimalValue.cpp)|简单||
 |1346|[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[C++](./leetcode/1346_checkIfExist.cpp)|简单||
 |1347|[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[C++](./leetcode/1347_minSteps.cpp)|中等|统计字符|
 |1348|[推文计数](https://leetcode-cn.com/problems/tweet-counts-per-frequency/)|[C++](./leetcode/1348_TweetCounts.cpp)|中等||
