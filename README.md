@@ -32,6 +32,7 @@
 |33|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|[C++](./leetcode/33_search.cpp)|中等|二分法、三异或|
 |34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[C++](./leetcode/34_searchRange.cpp)|中等|二分法|
 |36|[有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)|[C++](./leetcode/36_isValidSudoku.cpp)|中等|记录行、列、九宫格|
+|41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)|[C++](./leetcode/41_firstMissingPositive.cpp)|困难|哈希|
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[C++](./leetcode/42_trap.cpp)|困难|双指针、单调栈|
 |45|[跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)|[C++](./leetcode/45_jump.cpp)|困难|贪心|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./leetcode/46_permute.cpp)|中等|回溯法|
@@ -123,6 +124,7 @@
 |260|[只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/solution/)|[C++](./leetcode/260_singleNumber.cpp)|中等|位操作|
 |263|[丑数](https://leetcode-cn.com/problems/ugly-number/submissions/)|[C++](./leetcode/263_isUgly.cpp)|简单|丑数|
 |264|[丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)|[C++](./leetcode/264_nthUglyNumber.cpp)|中等|三指针、dp|
+|268|[缺失数字](https://leetcode-cn.com/problems/missing-number/)|[C++](./leetcode/268_missingNumber.cpp)|简单|数学、异或|
 |274|[H指数](https://leetcode-cn.com/problems/h-index/)|[C++](./leetcode/274_hIndex.cpp)|中等|计数排序|
 |275|[H指数 II](https://leetcode-cn.com/problems/h-index-ii/)|[C++](./leetcode/275_hIndex.cpp)|中等|二分法|
 |279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|[C++](./leetcode/279_numSquares.cpp)|中等|dp|
