@@ -45,6 +45,11 @@
  *  中序遍历的结果升序排列，则该二叉树必定是二叉搜索树
  *
  * 2.递归
+ *  使用val记录前面的最大值
+ *  判断当前根节点root->val和val之间的关系，若root->val <= val 那么不符合二叉搜索树性质。
+ *
+ *
+ * 3.递归+区间
  *  递归时输入可取值的左右区间范围。不在该区间内，return false;
  *  递归左节点,右节点。并更新区间边界。
  *
@@ -80,8 +85,34 @@ public:
         return true;
     }
 };
+//递归
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    bool inorder(TreeNode* root,long& val){
+        if(root==nullptr) return true;
+        if(!inorder(root->left,val)) return false;
+        if(root->val <= val) return false;
+        val = root->val;
+        if(!inorder(root->right,val)) return false;
+        return true;
+    }
+    bool isValidBST(TreeNode* root) {
+        //使用long做标志，不影响真正的二叉搜索树的值。
+        long val = (long)INT_MIN - 1;
+        return inorder(root,val);
+    }
+};
 
-//dfs+区间
+//递归+区间
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
