@@ -96,7 +96,7 @@ public:
         while(x){
             int temp = x % 10;
             x /= 10;
-            //git ls-tree判断是否溢出
+            //判断是否溢出
             if(res > INT_MAX / 10 || (res == INT_MAX / 10 && temp > 7)) return 0;
             if(res < INT_MIN / 10 || (res == INT_MIN / 10 && temp < -8)) return 0;
             res = res * 10 + temp;
