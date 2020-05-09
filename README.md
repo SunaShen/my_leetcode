@@ -52,6 +52,7 @@
 |65|[有效数字](https://leetcode-cn.com/problems/valid-number/)|[C++](./leetcode/65_isNumber.cpp)|困难|分类|
 |66|[加一](https://leetcode-cn.com/problems/plus-one/)|[C++](./leetcode/66_plusOne.cpp)|简单|字符加法|
 |67|[二进制求和](https://leetcode-cn.com/problems/add-binary/)|[C++](./leetcode/67_addBinary.cpp)|简单|字符串二进制加法|
+|69|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[C++](./leetcode/69_mySqrt.cpp)|简单|二分法|
 |70|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)|[C++](./leetcode/70_climbStairs.cpp)|简单|dp、斐波那契数列|
 |72|[编辑距离](https://leetcode-cn.com/problems/edit-distance/)|[C++](./leetcode/72_minDistance.cpp)|困难|dp|
 |73|[矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/)|[C++](./leetcode/73_setZeroes.cpp)|中等||
