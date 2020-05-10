@@ -32,6 +32,7 @@
 |33|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|[C++](./leetcode/33_search.cpp)|中等|二分法、三异或|
 |34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[C++](./leetcode/34_searchRange.cpp)|中等|二分法|
 |36|[有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)|[C++](./leetcode/36_isValidSudoku.cpp)|中等|记录行、列、九宫格|
+|37|[解数独](https://leetcode-cn.com/problems/sudoku-solver/)|[C++](./leetcode/37_solveSudoku.cpp)|困难|回溯、bitset|
 |41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)|[C++](./leetcode/41_firstMissingPositive.cpp)|困难|哈希|
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[C++](./leetcode/42_trap.cpp)|困难|双指针、单调栈|
 |45|[跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)|[C++](./leetcode/45_jump.cpp)|困难|贪心|
