@@ -26,6 +26,7 @@
 |24|[两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)|[C++](./leetcode/24_swapPairs.cpp)|中等||
 |25|[K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)|[C++](./leetcode/25_reverseKGroup.cpp)|困难|k个反转|
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|[C++](./leetcode/26_removeDuplicates.cpp)|简单|双指针|
+|27|[移除元素](https://leetcode-cn.com/problems/remove-element/)|[C++](./leetcode/27_removeElement.cpp)|简单|双指针|
 |28|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[C++](./leetcode/28_strStr.cpp)|简单|KMP|
 |31|[下一个排列](https://leetcode-cn.com/problems/next-permutation/)|[C++](./leetcode/31_nextPermutation.cpp)|中等||
 |32|[最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)|[C++](./leetcode/32_longestValidParentheses.cpp)|困难|dp、栈、计数|
