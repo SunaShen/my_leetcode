@@ -21,6 +21,7 @@
 |18|[四数之和](https://leetcode-cn.com/problems/4sum/)|[C++](./leetcode/18_fourSum.cpp)|中等|双指针|
 |19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[C++](./leetcode/19_removeNthFromEnd.cpp)|中等|双指针|
 |20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|[C++](./leetcode/20_isValid.cpp)|简单|栈|
+|21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[C++](./leetcode/21_mergeTwoLists.cpp)|简单||
 |22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|[C++](./leetcode/22_generateParenthesis.cpp)|中等|回溯法|
 |23|[合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|[C++](./leetcode/23_mergeKLists.cpp)|困难|优先队列|
 |24|[两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)|[C++](./leetcode/24_swapPairs.cpp)|中等||
@@ -94,6 +95,7 @@
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[C++](./leetcode/144_preorderTraversal.cpp)|中等|递归法、迭代法|
 |145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[C++](./leetcode/145_postorderTraversal.cpp)|困难|递归、迭代|
 |146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[C++](./leetcode/146_LRUCache.cpp)|中等|map+双向链表|
+|148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|[C++](./leetcode/148_sortList.cpp)|中等|快慢指针、归并|
 |150|[波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)|[C++](./leetcode/150_evalRPN.cpp)|中等|栈|
 |151|[翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|[C++](./leetcode/151_reverseWords.cpp)|中等|反转、原址操作|
 |152|[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|[C++](./leetcode/152_maxProduct.cpp)|中等|max、min|
