@@ -1,11 +1,11 @@
 // @File   : 13_romanToInt.cpp
 // @Source : https://leetcode-cn.com/problems/roman-to-integer/
-// @Title  : 罗马数字转整数
+// @Title  : 13. 罗马数字转整数
 // @Auther : sun_ds
 // @Date   : 2019/9/26
 
 
-/*  题目描述：
+/**  题目描述：
     罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。
 
     字符          数值
@@ -53,7 +53,7 @@
     著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
-/*
+/**
  *
  * 罗马数字转整数
  *
@@ -69,17 +69,13 @@
  * X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 
  * C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900
  *
+ * 使用map或者使用switch将单个罗马字符转换为数字。
+ * 遍历罗马数字串，比较当前值和前一个值之间的大小关系。
+ * 如果左边值大于右边值，正常。直接计入结果中。
+ * 如果左边值小于右边值，不正常，计入结果中的值为右边值减去左边值。
+ *
  *
  */
-
-
-
-#include <iostream>
-#include <string>
-#include <map>
-
-using namespace std;
-
 
 class Solution {
 public:
@@ -124,16 +120,34 @@ public:
 };
 
 
-int main()
-{
-    string s="MCMXCIV";
-
-    Solution su;
-    auto res = su.romanToInt(s);
-
-    cout << res << endl;
-
-
-    cout << "finish" << endl;
-    return 0;
-}
+class Solution {
+public:
+    //使用switch时间空间都优于map
+    int getValue(char c){
+        switch(c){
+            case 'I': return 1;
+            case 'V': return 5;
+            case 'X': return 10;
+            case 'L': return 50;
+            case 'C': return 100;
+            case 'D': return 500;
+            case 'M': return 1000;
+            default: return 0;
+        }
+    }
+    int romanToInt(string s) {
+        int n = s.size();
+        int pre = getValue(s[0]);
+        int res = pre;
+        for(int i=1;i<n;i++){
+            int cur = getValue(s[i]);
+            if(cur > pre){
+                res += cur - 2*pre;
+            }else{
+                res += cur;
+            }
+            pre = cur;
+        }
+        return res;
+    }
+};
