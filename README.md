@@ -187,6 +187,7 @@
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
 |999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
+|1028|[从先序遍历还原二叉树](https://leetcode-cn.com/problems/recover-a-tree-from-preorder-traversal/)|[C++](./leetcode/1028_recoverFromPreorder.cpp)|困难|栈|
 |1071|[字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|[C++](./leetcode/1071_gcdOfStrings.cpp)|简单|gcd、str1+str2==str2+str1|
 |1095|[山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)|[C++](./leetcode/1095_findInMountainArray.cpp)|困难|二分法|
 |1103|[分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)|[C++](./leetcode/1103_distributeCandies.cpp)|简单|等差数列|
@@ -216,6 +217,7 @@
 |1347|[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[C++](./leetcode/1347_minSteps.cpp)|中等|统计字符|
 |1348|[推文计数](https://leetcode-cn.com/problems/tweet-counts-per-frequency/)|[C++](./leetcode/1348_TweetCounts.cpp)|中等||
 |1349|[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[C++](./leetcode/1349_maxStudents.cpp)|困难|状态压缩、dp|
+|1360|[日期之间隔几天](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|[C++](./leetcode/1360_daysBetweenDates.cpp)|简单|闰年|
 
 # 剑指offer
 | 题号 | 题目 | 题解 | 难度 | 标签 |
