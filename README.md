@@ -158,6 +158,7 @@
 |466|[统计重复个数](https://leetcode-cn.com/problems/count-the-repetitions/)|[C++](./leetcode/466_getMaxRepetitions.cpp)|困难|循环节、map|
 |468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/)|[C++](./leetcode/468_validIPAddress.cpp)|中等|字符串|
 |496|[下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)|[C++](./leetcode/496_nextGreaterElement.cpp)|简单|单调栈|
+|501|[二叉搜索树中的众数](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)|[C++](./leetcode/501_findMode.cpp)|简单|中序遍历|
 |503|[下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)|[C++](./leetcode/503_nextGreaterElements.cpp)|中等|单调栈|
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
 |518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|[C++](./leetcode/518_change.cpp)|中等|dp、循环顺序|
