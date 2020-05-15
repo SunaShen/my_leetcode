@@ -42,14 +42,20 @@
 
 /**
  *
- * 就硬分类
- * 1.首先过滤掉前面的空格
- * 2.只能有一个e
- * 3.e分成两部分，前后部分都只能包含1个'+'或'-'且都必须在每部分开头位置 (判断开头位置，前面为' '或前面为'e')
- * 4.e分成两部分，只有前面部分能够包含1个'.'
- * 5.e前后必须有数字
- * 6.由于首先过滤掉了最前面的空格，所以后续再遇到空格就必须一路空格到底。且空格前面必须有数字。
+ * 1.就硬分类
+ * 1）首先过滤掉前面的空格
+ * 2）只能有一个e
+ * 3）e分成两部分，前后部分都只能包含1个'+'或'-'且都必须在每部分开头位置 (判断开头位置，前面为' '或前面为'e')
+ * 4）e分成两部分，只有前面部分能够包含1个'.'
+ * 5）e前后必须有数字
+ * 6）由于首先过滤掉了最前面的空格，所以后续再遇到空格就必须一路空格到底。且空格前面必须有数字。
  *
+ *
+ * https://leetcode-cn.com/problems/valid-number/solution/biao-qu-dong-fa-by-user8973/
+ * 2.有限状态机
+ * 构建状态转移表。
+ * 行索引为当前状态，列索引为当前输入类别。
+ * 遍历输入字符串，并不断的更新状态，判断最后状态是否是符合要求的状态。
  *
  *
  */
@@ -97,5 +103,58 @@ public:
         //防止最后一位为e
         if(num_flag == 1) return true;
         else return false;
+    }
+};
+
+
+class Solution {
+public:
+    bool isNumber(string s) {
+        if(s.empty()) return false;
+        int n = s.size();
+
+        int state = 0;
+        vector<bool> finals({0, 0, 0, 1, 0, 1, 1, 0, 1}); // 合法的终止状态
+        vector<vector<int> > transfer({
+                                              //  空格 +/- 0-9  .   e  other
+                                              {0,  1,  6,  2,  -1, -1},   //开始状态
+                                              {-1, -1, 6,  2,  -1, -1},   //前面是+/-
+                                              {-1, -1, 3,  -1, -1, -1},   //前面是.
+                                              {8,  -1, 3,  -1, 4,  -1},   //前面是数字，且已经有过了.
+                                              {-1, 7,  5,  -1, -1, -1},   //前面是e
+                                              {8,  -1, 5,  -1, -1, -1},   //前面是数字，且 e 出现过
+                                              {8,  -1, 6,  3,  4,  -1},   //前面是数字，且 e 没出现过
+                                              {-1, -1, 5,  -1, -1, -1},   //前面是+/-，且 e 出现过
+                                              {8,  -1, -1, -1, -1, -1},   //处理完成，处理空格状态
+                                      });
+
+        for(int i = 0; i < n; ++i)
+        {
+            state = transfer[state][_make(s[i])];
+            if(state < 0) return false;
+        }
+        return finals[state];
+    }
+
+private:
+    int _make(const char& c)
+    {
+        switch(c)
+        {
+            case ' ': return 0;
+            case '+': return 1;
+            case '-': return 1;
+            case '.': return 3;
+            case 'e': return 4;
+            default: return _number(c);
+        }
+    }
+
+    int _number(const char& c)
+    {
+        if(c >= '0' && c <= '9')
+            return 2;
+        else
+            return 5;
     }
 };
