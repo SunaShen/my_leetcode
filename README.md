@@ -86,6 +86,7 @@
 |120|[三角形最小路径和](https://leetcode-cn.com/problems/triangle/)|[C++](./leetcode/120_minimumTotal.cpp)|中等|dp|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[C++](./leetcode/121_maxProfit.cpp)|简单|单调栈|
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|[C++](./leetcode/122_maxProfit.cpp)|简单|单调栈、贪心|
+|124|[二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|[C++](./leetcode/124_maxPathSum.cpp)|困难|后序遍历|
 |129|[求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|[C++](./leetcode/129_sumNumbers.cpp)|中等|dfs|
 |130|[被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)|[C++](./leetcode/130_solve.cpp)|中等|dfs|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station/)|[C++](./leetcode/134_canCompleteCircuit.cpp)|中等|总油量最小值|
@@ -172,6 +173,7 @@
 |560|[和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|[C++](./leetcode/560_subarraySum.cpp)|中等|前缀和、哈希|
 |617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[C++](./leetcode/617_mergeTrees.cpp)|简单|递归|
 |662|[二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)|[C++](./leetcode/662_widthOfBinaryTree.cpp)|中等|dfs、bfs|
+|680|[验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)|[C++](./leetcode/680_validPalindrome.cpp)|简单|双指针|
 |693|[交替位二进制数](https://leetcode-cn.com/problems/binary-number-with-alternating-bits/)|[C++](./leetcode/693_hasAlternatingBits.cpp)|简单|位运算|
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
