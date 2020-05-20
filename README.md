@@ -158,6 +158,7 @@
 |445|[两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)|[C++](./leetcode/445_addTwoNumbers.cpp)|中等|反向链表、栈|
 |450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
 |460|[LFU缓存](https://leetcode-cn.com/problems/lfu-cache/)|[C++](./leetcode/460_LFUCache.cpp)|困难|map+两级链表|
+|463|[岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)|[C++](./leetcode/463_islandPerimeter.cpp)|简单|dfs、边的个数|
 |466|[统计重复个数](https://leetcode-cn.com/problems/count-the-repetitions/)|[C++](./leetcode/466_getMaxRepetitions.cpp)|困难|循环节、map|
 |468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/)|[C++](./leetcode/468_validIPAddress.cpp)|中等|字符串|
 |496|[下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)|[C++](./leetcode/496_nextGreaterElement.cpp)|简单|单调栈|
@@ -176,6 +177,7 @@
 |680|[验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)|[C++](./leetcode/680_validPalindrome.cpp)|简单|双指针|
 |693|[交替位二进制数](https://leetcode-cn.com/problems/binary-number-with-alternating-bits/)|[C++](./leetcode/693_hasAlternatingBits.cpp)|简单|位运算|
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
+|701|[二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)|[C++](./leetcode/701_insertIntoBST.cpp)|中等|二分搜索|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
 |824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
@@ -220,11 +222,13 @@
 |1276|[不浪费原料的汉堡制作方案](https://leetcode-cn.com/problems/number-of-burgers-with-no-waste-of-ingredients/)|[C++](./leetcode/1276_numOfBurgers.cpp)|中等||
 |1277|[统计全为 1 的正方形子矩阵](https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/)|[C++](./leetcode/1277_countSquares.cpp)|中等|dp|
 |1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|[C++](./leetcode/1290_getDecimalValue.cpp)|简单||
+|1335|[工作计划的最低难度](https://leetcode-cn.com/problems/minimum-difficulty-of-a-job-schedule/)|[C++](./leetcode/1355_minDifficulty.cpp)|困难|dp|
 |1346|[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[C++](./leetcode/1346_checkIfExist.cpp)|简单||
 |1347|[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[C++](./leetcode/1347_minSteps.cpp)|中等|统计字符|
 |1348|[推文计数](https://leetcode-cn.com/problems/tweet-counts-per-frequency/)|[C++](./leetcode/1348_TweetCounts.cpp)|中等||
 |1349|[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[C++](./leetcode/1349_maxStudents.cpp)|困难|状态压缩、dp|
 |1360|[日期之间隔几天](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|[C++](./leetcode/1360_daysBetweenDates.cpp)|简单|闰年|
+|1371|[每个元音包含偶数次的最长子字符串](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[C++](./leetcode/1371_findTheLongestSubstring.cpp)|中等|前缀和、状态压缩|
 
 # 剑指offer
 | 题号 | 题目 | 题解 | 难度 | 标签 |
