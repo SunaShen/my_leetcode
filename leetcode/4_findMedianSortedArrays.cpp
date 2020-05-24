@@ -52,6 +52,33 @@
  * 来源：力扣（LeetCode）
  * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
  *
+ * 2.划分数组
+ * 使用 i 将数组 A 划分成两部分 A[0,i-1]和 A[i,m-1]
+ * 使用 j 将数组 B 划分成两部分 B[0,j-1]和 B[j,n-1]
+ *
+ * 将A[0,i-1]和B[0,j-1]组成 left_part
+ * 将A[i,m-1]和B[j,n-1]组成 right_part
+ *
+ * 2.1 若 m+n 为偶数
+ *  当 len(left_part) == len(right_part) 且 max(left_part) <= min(right_part) 时。
+ *  中位数 = (max(left_part) + min(right_part)) / 2;
+ * 2.2 若 m+n 为奇数
+ *  当 len(left_part) == len(right_part) + 1 且 max(left_part) <= min(right_part) 时。
+ *  中位数 = max(left_part);
+ *
+ * 其中 i 的取值范围为[0,m], j 的取值范围为[0,n]
+ * 保证长度之间的关系。 有 i + j = m - i + n - j 或 i + j = m - i + n - j + 1
+ * 统一起来，当 i = [0,m] 时， j 有 j = (i+j+1)/2 - i;
+ * 由于 max(left_part) = max(A[i-1],B[j-1]) min(right_part) = min(A[i],B[j])
+ * 所以需要有 A[i-1] <= B[j] 且 B[j-1] <= A[i]
+ *
+ * 问题转换为求满足上述条件的 i 的最大值。
+ * 条件简化为A[i-1] <= B[j]。
+ * 因为若此时 i 为可取的最大值，则表示 A[i] > B[j]
+ * 则有 A[i] > B[j] >= B[j-1].也满足了第二个条件。
+ *
+ * 使用二分法在[0,m]之间搜索 i 最大的可取位置。
+ *
  *
  *
  *
@@ -87,4 +114,46 @@ public:
     }
 };
 
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        //保证 nums1 的长度小于 nums2
+        if (nums1.size() > nums2.size()) {
+            return findMedianSortedArrays(nums2, nums1);
+        }
+
+        int m = nums1.size();
+        int n = nums2.size();
+        int left = 0, right = m, ansi = -1;
+        // median1：前一部分的最大值
+        // median2：后一部分的最小值
+        int median1 = 0, median2 = 0;
+
+        while (left <= right) {
+            // 前一部分包含 nums1[0 .. i-1] 和 nums2[0 .. j-1]
+            // 后一部分包含 nums1[i .. m-1] 和 nums2[j .. n-1]
+            int i = (left + right) / 2;
+            int j = (m + n + 1) / 2 - i;
+
+            // nums_im1, nums_i, nums_jm1, nums_j 分别表示 nums1[i-1], nums1[i], nums2[j-1], nums2[j]
+            int nums_im1 = (i == 0 ? INT_MIN : nums1[i - 1]);
+            int nums_i = (i == m ? INT_MAX : nums1[i]);
+            int nums_jm1 = (j == 0 ? INT_MIN : nums2[j - 1]);
+            int nums_j = (j == n ? INT_MAX : nums2[j]);
+
+            if (nums_im1 <= nums_j) {
+                ansi = i;
+                median1 = max(nums_im1, nums_jm1);
+                median2 = min(nums_i, nums_j);
+                left = i + 1;
+            }
+            else {
+                right = i - 1;
+            }
+        }
+
+        return (m + n) % 2 == 0 ? (median1 + median2) / 2.0 : median1;
+    }
+};
 
