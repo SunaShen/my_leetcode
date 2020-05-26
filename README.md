@@ -138,6 +138,7 @@
 |275|[H指数 II](https://leetcode-cn.com/problems/h-index-ii/)|[C++](./leetcode/275_hIndex.cpp)|中等|二分法|
 |279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|[C++](./leetcode/279_numSquares.cpp)|中等|dp|
 |283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|[C++](./leetcode/283_moveZeroes.cpp)|简单|双指针|
+|287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)|[C++](./leetcode/287_findDuplicate.cpp)|中等|二分法、快慢指针|
 |289|[生命游戏](https://leetcode-cn.com/problems/game-of-life/)|[C++](./leetcode/289_gameOfLife.cpp)|中等|搜索、位|
 |292|[Nim 游戏](https://leetcode-cn.com/problems/nim-game/)|[C++](./leetcode/292_canWinNim.cpp)|简单|博弈论、必胜态必败态|
 |295|[数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)|[C++](./leetcode/295_MedianFinder.cpp)|困难|大顶堆、小顶堆|
