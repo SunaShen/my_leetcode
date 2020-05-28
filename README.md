@@ -154,6 +154,7 @@
 |365|[水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)|[C++](./leetcode/365_canMeasureWater.cpp)|中等|dfs、gcd|
 |367|[有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)|[C++](./leetcode/367_isPerfectSquare.cpp)|简单|二分法|
 |372|[超级次方](https://leetcode-cn.com/problems/super-pow/)|[C++](./leetcode/372_superPow.cpp)|中等|幂运算、取模|
+|394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|[C++](./leetcode/394_decodeString.cpp)|中等|栈|
 |400|[第N个数字](https://leetcode-cn.com/problems/nth-digit/)|[C++](./leetcode/400_findNthDigit.cpp)|中等|数学|
 |409|[最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)|[C++](./leetcode/409_longestPalindrome.cpp)|简单||
 |424|[替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|[C++](./leetcode/424_characterReplacement.cpp)|中等|滑动窗口|
