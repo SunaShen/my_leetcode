@@ -233,6 +233,7 @@
 |1349|[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[C++](./leetcode/1349_maxStudents.cpp)|困难|状态压缩、dp|
 |1360|[日期之间隔几天](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|[C++](./leetcode/1360_daysBetweenDates.cpp)|简单|闰年|
 |1371|[每个元音包含偶数次的最长子字符串](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[C++](./leetcode/1371_findTheLongestSubstring.cpp)|中等|前缀和、状态压缩|
+|1431|[拥有最多糖果的孩子](https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/)|[C++](./leetcode/1431_kidsWithCandies.cpp)|简单||
 
 # 剑指offer
 | 题号 | 题目 | 题解 | 难度 | 标签 |
