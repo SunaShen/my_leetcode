@@ -88,6 +88,8 @@
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[C++](./leetcode/121_maxProfit.cpp)|简单|单调栈|
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|[C++](./leetcode/122_maxProfit.cpp)|简单|单调栈、贪心|
 |124|[二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|[C++](./leetcode/124_maxPathSum.cpp)|困难|后序遍历|
+|126|[单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)|[C++](./leetcode/126_findLadders.cpp)|困难|图+bfs|
+|128|[最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|[C++](./leetcode/128_longestConsecutive.cpp)|困难|set|
 |129|[求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|[C++](./leetcode/129_sumNumbers.cpp)|中等|dfs|
 |130|[被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)|[C++](./leetcode/130_solve.cpp)|中等|dfs|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station/)|[C++](./leetcode/134_canCompleteCircuit.cpp)|中等|总油量最小值|
@@ -128,6 +130,7 @@
 |233|[数字 1 的个数](https://leetcode-cn.com/problems/number-of-digit-one/)|[C++](./leetcode/233_countDigitOne.cpp)|困难|公式、递归|
 |235|[二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[C++](./leetcode/235_lowestCommonAncestor.cpp)|简单|LCA|
 |236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](./leetcode/236_lowestCommonAncestor.cpp)|中等|递归(后序遍历)|
+|238|[除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/)|[C++](./leetcode/238_productExceptSelf.cpp)|中等|前/后缀乘积|
 |239|[滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)|[C++](./leetcode/239_maxSlidingWindow.cpp)|困难|单调队列|
 |240|[搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|[C++](./leetcode/240_searchMatrix.cpp)|中等|二分法、副对角线|
 |260|[只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/solution/)|[C++](./leetcode/260_singleNumber.cpp)|中等|位操作|
@@ -185,6 +188,7 @@
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
 |824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
 |836|[矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)|[C++](./leetcode/836_isRectangleOverlap.cpp)|简单|考虑不重叠|
+|837|[新21点](https://leetcode-cn.com/problems/new-21-game/)|[C++](./leetcode/837_new21Game.cpp)|中等|dp|
 |860|[柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)|[C++](./leetcode/860_lemonadeChange.cpp)|简单|模拟|
 |876|[链表的中间节点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)|[C++](./leetcode/876_middleNode.cpp)|简单|快慢指针|
 |887|[鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)|[C++](./leetcode/887_superEggDrop.cpp)|困难|dp+二分|
@@ -197,6 +201,7 @@
 |974|[和可被 K 整除的子数组](https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/)|[C++](./leetcode/974_subarraysDivByK.cpp)|中等|前缀和、线性同余|
 |983|[最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/)|[C++](./leetcode/983_mincostTickets.cpp)|中等|dp|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
+|990|[等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)|[C++](./leetcode/990_equationsPossible.cpp)|中等|并查集|
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
 |999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
@@ -226,6 +231,7 @@
 |1276|[不浪费原料的汉堡制作方案](https://leetcode-cn.com/problems/number-of-burgers-with-no-waste-of-ingredients/)|[C++](./leetcode/1276_numOfBurgers.cpp)|中等||
 |1277|[统计全为 1 的正方形子矩阵](https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/)|[C++](./leetcode/1277_countSquares.cpp)|中等|dp|
 |1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|[C++](./leetcode/1290_getDecimalValue.cpp)|简单||
+|1300|[转变数组后最接近目标值的数组和](https://leetcode-cn.com/problems/sum-of-mutated-array-closest-to-target/)|[C++](./leetcode/1300_findBestValue.cpp)|中等|排序+遍历|
 |1335|[工作计划的最低难度](https://leetcode-cn.com/problems/minimum-difficulty-of-a-job-schedule/)|[C++](./leetcode/1355_minDifficulty.cpp)|困难|dp|
 |1346|[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[C++](./leetcode/1346_checkIfExist.cpp)|简单||
 |1347|[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[C++](./leetcode/1347_minSteps.cpp)|中等|统计字符|
