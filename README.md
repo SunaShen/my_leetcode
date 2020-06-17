@@ -205,6 +205,7 @@
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
 |999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
+|1014|[最佳观光组合](https://leetcode-cn.com/problems/best-sightseeing-pair/)|[C++](./leetcode/1014_maxScoreSightseeingPair.cpp)|中等||
 |1028|[从先序遍历还原二叉树](https://leetcode-cn.com/problems/recover-a-tree-from-preorder-traversal/)|[C++](./leetcode/1028_recoverFromPreorder.cpp)|困难|栈|
 |1071|[字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|[C++](./leetcode/1071_gcdOfStrings.cpp)|简单|gcd、str1+str2==str2+str1|
 |1095|[山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)|[C++](./leetcode/1095_findInMountainArray.cpp)|困难|二分法|
