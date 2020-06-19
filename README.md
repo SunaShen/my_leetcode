@@ -88,6 +88,7 @@
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[C++](./leetcode/121_maxProfit.cpp)|简单|单调栈|
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|[C++](./leetcode/122_maxProfit.cpp)|简单|单调栈、贪心|
 |124|[二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|[C++](./leetcode/124_maxPathSum.cpp)|困难|后序遍历|
+|125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[C++](./leetcode/125_isPalindrome.cpp)|简单|双指针|
 |126|[单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)|[C++](./leetcode/126_findLadders.cpp)|困难|图+bfs|
 |128|[最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|[C++](./leetcode/128_longestConsecutive.cpp)|困难|set|
 |129|[求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|[C++](./leetcode/129_sumNumbers.cpp)|中等|dfs|
