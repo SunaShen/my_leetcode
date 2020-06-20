@@ -113,11 +113,8 @@
 class Solution {
 public:
     bool isMatch(string s, string p) {
-        if(p.size()==0&&s.size()==0)
-          return true;
-        if(s.size()==0||p.size()==0)
-            return false;
-
+        if(s.size()==0&&p.size()==0) return true;
+        // if(s.size()==0||p.size()==0) return false;
         int len1 = s.size();
         int len2 = p.size();
         vector<vector<bool>> dp(len1+1,vector<bool>(len2+1,false));
