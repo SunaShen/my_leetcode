@@ -17,6 +17,7 @@
 |13|[罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/)|[C++](./leetcode/13_romanToInt.cpp)|简单||
 |14|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[C++](./leetcode/14_longestCommonPrefix.cpp)|简单||
 |15|[三数之和](https://leetcode-cn.com/problems/3sum/)|[C++](./leetcode/15_threeSum.cpp)|中等|双指针|
+|16|[最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/)|[C++](./leetcode/16_threeSumClosest.cpp)|中等|排序+双指针|
 |17|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)|[C++](./leetcode/17_letterCombinations.cpp)|中等|回溯法|
 |18|[四数之和](https://leetcode-cn.com/problems/4sum/)|[C++](./leetcode/18_fourSum.cpp)|中等|双指针|
 |19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[C++](./leetcode/19_removeNthFromEnd.cpp)|中等|双指针|
@@ -97,6 +98,7 @@
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[C++](./leetcode/136_singleNumber.cpp)|简单|位操作|
 |137|[只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)|[C++](./leetcode/137_singleNumber.cpp)|中等|位操作(三进制半加器)|
 |138|[复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)|[C++](./leetcode/138_copyRandomList.cpp)|中等|迭代、dfs、bfs|
+|139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|[C++](./leetcode/139_wordBreak.cpp)|中等|dp|
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[C++](./leetcode/144_preorderTraversal.cpp)|中等|递归法、迭代法|
 |145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[C++](./leetcode/145_postorderTraversal.cpp)|困难|递归、迭代|
 |146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[C++](./leetcode/146_LRUCache.cpp)|中等|map+双向链表|
@@ -333,6 +335,7 @@
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
 |面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](./程序员面试金典/10.03_search.cpp)|中等|二分法|
 |面试题 16.03|[交点](https://leetcode-cn.com/problems/intersection-lcci/)|[C++](./程序员面试金典/16.03_intersection.cpp)|困难|数学|
+|面试题 16.18|[模式匹配](https://leetcode-cn.com/problems/pattern-matching-lcci/)|[C++](./程序员面试金典/16.18_patternMatching.cpp)|中等|枚举解|
 |面试题 16.25|[LRU缓存](https://leetcode-cn.com/problems/lru-cache-lcci/)|[C++](./程序员面试金典/16.25_LRUCache.cpp)|困难|map+双向链表|
 |面试题 17.01|[不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)|[C++](./程序员面试金典/17.01_add.cpp)|简单|位操作|
 |面试题 17.16|[按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/)|[C++](./程序员面试金典/17.16_massage.cpp)|简单|dp|
