@@ -329,6 +329,7 @@
 | :---- | :---- | :----: | :----:| :---: |
 |面试题 01.06|[字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)|[C++](./程序员面试金典/01.06_compressString.cpp)|简单|字符串|
 |面试题 01.07|[旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)|[C++](./程序员面试金典/01.07_rotate.cpp)|中等|四分之一|
+|面试题 02.01|[移除重复节点](https://leetcode-cn.com/problems/remove-duplicate-node-lcci/)|[C++](./程序员面试金典/02.01_removeDuplicateNodes.cpp)|简单||
 |面试题 02.05|[链表求和](https://leetcode-cn.com/problems/sum-lists-lcci/)|[C++](./程序员面试金典/02.05_addTwoNumbers.cpp)|简单|链表求和|
 |面试题 05.06|[整数转换](https://leetcode-cn.com/problems/convert-integer-lcci/)|[C++](./程序员面试金典/05.06_convertInteger.cpp)|简单|temp&-temp、temp&temp-1|
 |面试题 08.11|[硬币](https://leetcode-cn.com/problems/coin-lcci/)|[C++](./程序员面试金典/08.11_waysToChange.cpp)|中等|dp、循环顺序|
