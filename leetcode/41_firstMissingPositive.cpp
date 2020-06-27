@@ -85,16 +85,15 @@ public:
     int firstMissingPositive(vector<int>& nums) {
         int n = nums.size();
         for(int i=0;i<n;i++){
-            while(i!=nums[i]-1){
-                //不在范围内不考虑
-                if(nums[i]<=0||nums[i]>n) break;
-                //将当前nums[i]放到正确位置，并在下一次循环，判断新换过来的数字。
+            //将当前nums[i]放到正确位置，并在下一次循环，判断新换过来的数字。
+            while(nums[i]>0&&nums[i]<=n&&nums[i] != nums[nums[i]-1]){
                 swap(nums[nums[i]-1],nums[i]);
             }
         }
         for(int i=0;i<n;i++){
             //第一个不符合规律的值就是缺失的值
-            if(nums[i]-1!=i) return i+1;
+            // nums[i] - 1 != i 会溢出
+            if(nums[i]!=i + 1) return i+1;
         }
         return n+1;
     }
