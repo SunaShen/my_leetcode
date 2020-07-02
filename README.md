@@ -160,6 +160,7 @@
 |365|[水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)|[C++](./leetcode/365_canMeasureWater.cpp)|中等|dfs、gcd|
 |367|[有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)|[C++](./leetcode/367_isPerfectSquare.cpp)|简单|二分法|
 |372|[超级次方](https://leetcode-cn.com/problems/super-pow/)|[C++](./leetcode/372_superPow.cpp)|中等|幂运算、取模|
+|378|[有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)|[C++](./leetcode/378_kthSmallest.cpp)|中等|优先队列、二分法|
 |394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|[C++](./leetcode/394_decodeString.cpp)|中等|栈|
 |400|[第N个数字](https://leetcode-cn.com/problems/nth-digit/)|[C++](./leetcode/400_findNthDigit.cpp)|中等|数学|
 |409|[最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)|[C++](./leetcode/409_longestPalindrome.cpp)|简单||
@@ -187,6 +188,7 @@
 |693|[交替位二进制数](https://leetcode-cn.com/problems/binary-number-with-alternating-bits/)|[C++](./leetcode/693_hasAlternatingBits.cpp)|简单|位运算|
 |695|[岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|[C++](./leetcode/695_maxAreaOfIsland.cpp)|中等|dfs、bfs|
 |701|[二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)|[C++](./leetcode/701_insertIntoBST.cpp)|中等|二分搜索|
+|718|[最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)|[C++](./leetcode/718_findLength.cpp)|中等|dp、滑动窗口|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
 |824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
