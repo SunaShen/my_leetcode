@@ -38,6 +38,7 @@
 |37|[解数独](https://leetcode-cn.com/problems/sudoku-solver/)|[C++](./leetcode/37_solveSudoku.cpp)|困难|回溯、bitset|
 |41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)|[C++](./leetcode/41_firstMissingPositive.cpp)|困难|哈希|
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[C++](./leetcode/42_trap.cpp)|困难|双指针、单调栈|
+|44|[通配符匹配](https://leetcode-cn.com/problems/wildcard-matching/)|[C++](./leetcode/44_isMatch.cpp)|困难|dp|
 |45|[跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)|[C++](./leetcode/45_jump.cpp)|困难|贪心|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./leetcode/46_permute.cpp)|中等|回溯法|
 |47|[全排列II](https://leetcode-cn.com/problems/permutations-ii/)|[C++](./leetcode/47_permuteUnique.cpp)|中等|回溯法|
@@ -100,6 +101,7 @@
 |137|[只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)|[C++](./leetcode/137_singleNumber.cpp)|中等|位操作(三进制半加器)|
 |138|[复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)|[C++](./leetcode/138_copyRandomList.cpp)|中等|迭代、dfs、bfs|
 |139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|[C++](./leetcode/139_wordBreak.cpp)|中等|dp|
+|143|[重排链表](https://leetcode-cn.com/problems/reorder-list/)|[C++](./leetcode/143_reorderList.cpp)|中等|中点反转后拼接|
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[C++](./leetcode/144_preorderTraversal.cpp)|中等|递归法、迭代法|
 |145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[C++](./leetcode/145_postorderTraversal.cpp)|困难|递归、迭代|
 |146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[C++](./leetcode/146_LRUCache.cpp)|中等|map+双向链表|
@@ -153,6 +155,7 @@
 |300|[最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)|[C++](./leetcode/300_lengthOfLIS.cpp)|中等|dp|
 |307|[区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)|[C++](./leetcode/307_NumArray.cpp)|中等|树状数组、线段树|
 |322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|[C++](./leetcode/322_coinChange.cpp)|中等|dp|
+|328|[奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)|[C++](./leetcode/328_oddEvenList.cpp)|中等|链表|
 |337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|[C++](./leetcode/337_rob.cpp)|中等|树状dp|
 |343|[整数拆分](https://leetcode-cn.com/problems/integer-break/)|[C++](./leetcode/343_integerBreak.cpp)|中等|dp、贪心|
 |344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[C++](./leetcode/344_reverseString.cpp)|简单|swap、rbegin|
@@ -339,6 +342,7 @@
 |面试题 10.01|[合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)|[C++](./程序员面试金典/10.01_merge.cpp)|简单|逆向双指针|
 |面试题 10.03|[搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)|[C++](./程序员面试金典/10.03_search.cpp)|中等|二分法|
 |面试题 16.03|[交点](https://leetcode-cn.com/problems/intersection-lcci/)|[C++](./程序员面试金典/16.03_intersection.cpp)|困难|数学|
+|面试题 16.11|[跳水板](https://leetcode-cn.com/problems/diving-board-lcci/)|[C++](./程序员面试金典/16.11_divingBoard.cpp)|简单|公式|
 |面试题 16.18|[模式匹配](https://leetcode-cn.com/problems/pattern-matching-lcci/)|[C++](./程序员面试金典/16.18_patternMatching.cpp)|中等|枚举解|
 |面试题 16.25|[LRU缓存](https://leetcode-cn.com/problems/lru-cache-lcci/)|[C++](./程序员面试金典/16.25_LRUCache.cpp)|困难|map+双向链表|
 |面试题 17.01|[不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)|[C++](./程序员面试金典/17.01_add.cpp)|简单|位操作|
