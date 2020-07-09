@@ -346,5 +346,6 @@
 |面试题 16.18|[模式匹配](https://leetcode-cn.com/problems/pattern-matching-lcci/)|[C++](./程序员面试金典/16.18_patternMatching.cpp)|中等|枚举解|
 |面试题 16.25|[LRU缓存](https://leetcode-cn.com/problems/lru-cache-lcci/)|[C++](./程序员面试金典/16.25_LRUCache.cpp)|困难|map+双向链表|
 |面试题 17.01|[不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)|[C++](./程序员面试金典/17.01_add.cpp)|简单|位操作|
+|面试题 17.13|[恢复空格](https://leetcode-cn.com/problems/re-space-lcci/)|[C++](./程序员面试金典/17.13_respace.cpp)|中等|字典树、dp|
 |面试题 17.16|[按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/)|[C++](./程序员面试金典/17.16_massage.cpp)|简单|dp|
 |面试题 17.21|[直方图的水量](https://leetcode-cn.com/problems/volume-of-histogram-lcci/)|[C++](./程序员面试金典/17.21_trap.cpp)|困难|单调栈、dp|
