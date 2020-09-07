@@ -36,10 +36,24 @@
  * 1.小顶堆
  *  放入小顶堆，去除k个值即为前k小的值。
  *
- * 2.快排思想
+ *  建堆复杂度 O(N)
+ *  时间复杂度度 O(N)
+ *  空间复杂度 O(N)
+ *
+ * 2.大顶堆
+ *  构建 k 大小的大顶堆
+ *  遍历所有数字，若小于堆顶则堆顶出堆，并将该数字放入堆中，最终堆中的 k 个数为结果
+ *
+ *  时间复杂度 O(NlogK)
+ *  空间复杂度 O(K)
+ *
+ * 3.快排思想
  *  如果partition<k 则，partition前的数都是前k小。左边界从partition+1开始找剩下的
  *  如果partition>k 则，右边界变到partition-1，继续寻找。
  * 直到找到k个值。
+ *
+ * 时间复杂度 O(N)
+ * 空间复杂度 O(logN)
  *
  */
 
@@ -93,5 +107,65 @@ public:
             }
         }
         return res;
+    }
+};
+
+class Solution {
+public:
+    int partiation(vector<int>& nums, int l, int r){
+        int i = l;
+        int j = l;
+        while(j < r){
+            if(nums[j] < nums[r]){
+                swap(nums[i], nums[j]);
+                i++;
+            }
+            j++;
+        }
+        swap(nums[i], nums[r]);
+        return i;
+    }
+    vector<int> getLeastNumbers(vector<int>& arr, int k) {
+        if (k==0) return {};
+        int l = 0, r = arr.size()-1;
+        while(true){
+            int q = partiation(arr, l, r);
+            // 与 k-1 比较 第 1 小对应索引为 0
+            if(q > (k-1)){
+                r = q - 1;
+            }else if(q == (k-1)){
+                break;
+            }else{
+                l = q + 1;
+            }
+        }
+        return vector<int>(arr.begin(), arr.begin()+k);
+    }
+};
+
+class Solution {
+public:
+    int pratition(vector<int>& num,int l,int r){
+        int i=l;
+        for(int j=l;j<r;j++){
+            if(num[j]<num[r]){
+                swap(num[j],num[i]);
+                i++;
+            }
+        }
+        swap(num[i],num[r]);
+        return i;
+    }
+    void search(vector<int>& arr, int k, int l, int r){
+        if(l>=r) return;
+        int p = pratition(arr,l,r);
+        if(p==k-1) return;
+        else if(p<k) search(arr,k,p+1,r);
+        else search(arr,k,l,p-1);
+    }
+    vector<int> getLeastNumbers(vector<int>& arr, int k) {
+        if(k==0) return {};
+        search(arr,k,0,arr.size()-1);
+        return vector<int>(arr.begin(),arr.begin()+k);
     }
 };
