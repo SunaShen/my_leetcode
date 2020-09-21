@@ -98,20 +98,47 @@ public:
     vector<vector<int>> ans;
     int n;
     void func(int i, vector<int> temp, vector<int> num){
-        if(i==n)
-            return;
+
+        // if(i == n){
+        //     ans.push_back(temp);
+        //     return;
+        // }
+
+        // 子集问题，记录中间路径
         ans.push_back(temp);
         //核心，剪枝
-        for(int j=i+1;j<n;++j){
+        // 子集问题，不考虑顺序，(组合考虑顺序)，因此用过的就丢了，j 从 i+1 开始
+        for(int j=i;j<n;++j){
             temp.push_back(num[j]);
-            func(j,temp,num);
+            func(j+1,temp,num);
             temp.pop_back();
         }
     }
     vector<vector<int>> subsets(vector<int>& nums) {
         n = nums.size();
-        func(-1,{},nums);
+        func(0,{},nums);
         return ans;
+    }
+};
+
+class Solution {
+private:
+    vector<vector<int>> res;
+public:
+    void dfs(vector<int>& nums, vector<int> temp, int index){
+        if(index == nums.size()){
+            res.push_back(temp);
+            return;
+        }
+        // 选 or 不选
+        temp.push_back(nums[index]);
+        dfs(nums, temp, index+1);
+        temp.pop_back();
+        dfs(nums, temp, index+1);
+    }
+    vector<vector<int>> subsets(vector<int>& nums) {
+        dfs(nums, {}, 0);
+        return res;
     }
 };
 

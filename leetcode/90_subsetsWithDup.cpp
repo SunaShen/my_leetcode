@@ -102,35 +102,20 @@
 
 //递归 回溯
 class Solution {
-public:
+private:
     vector<vector<int>> ans;
     int n;
+public:
     void func(int k,vector<int> temp,vector<int> num){
-        if(k == n){
-            return;
-        }
-        ans.push_back(temp);
-        for(int i=k;i<n;++i){
-            if(i>k+1&&num[i]==num[i-1]) continue;
-            temp.push_back(num[i]);
-            func(i+1,temp,num);
-            temp.pop_back();
-        }
-    }
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        n = nums.size();
-        sort(nums.begin(),nums.end());
-        func(0,{},nums);
-        return ans;
-    }
-};
 
-class Solution {
-public:
-    vector<vector<int>> ans;
-    int n;
-    void func(int k,vector<int> temp,vector<int> num){
+        // if(k == n){
+        //     ans.push_back(temp);
+        //     return;
+        // }
+
+        // 子集问题，记录整个路径
         ans.push_back(temp);
+        // 子集问题，不考虑顺序，(组合考虑顺序)，因此用过的就丢了，i 从 k 开始
         for(int i=k;i<n;++i){
             if(i>k&&num[i]==num[i-1]) continue;
             temp.push_back(num[i]);
