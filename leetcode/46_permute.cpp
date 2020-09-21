@@ -1,10 +1,10 @@
 // @File   : 46_permute.cpp
 // @Source : https://leetcode-cn.com/problems/permutations/
-// @Title  : 全排列
+// @Title  : 46. 全排列
 // @Auther : sun_ds
 // @Date   : 2019/11/8
 
-/*  题目描述：
+/**  题目描述：
     给定一个没有重复数字的序列，返回其所有可能的全排列。
 
     示例:
@@ -26,112 +26,64 @@
 */
 
 
-/*
-
+/**
  *
  * 全排列
  * 给定一个<没有重复>数字的序列，返回其所有可能的全排列。
  *
- * 回溯法
- * for循环遍历各不重复数字
- * 删除该数字，结果存储该数字
- * 递归
- * 恢复该数字，结果删除该数字
+ * 1. 回溯法
+ * 全排列要考虑顺序的，考虑情况，选中后面数字之后在选中前面数字，因此每次循环的范围为[0,n-1]，而不是值搜索后半部分。
+ * for循环遍历 [0,n-1]
+ *   选中某数字，temp存储该数字
+ *   递归
+ *   恢复该数字，temp删除该数字
  *
- * 直到结果长度等于数字的size结束并保存。
+ * 直到temp长度等于数字的size结束并保存。使用 vector<bool> used 存储该元素是否选中
  *
+ * 2. 回溯法 使用 swap
+ * 使用 swap 每次将选中的元素放置前面，那么接下来搜索的范围为后半部分。
+ * for 循环的搜索区间为 [cnt, n-1]
+ * 最终 cnt == n时，保存 nums 即为结果。
  *
- * 结果可以用vector<int>保存，使用push_back和pop_back
- * 当前搜索数字使用vector<int>。需要使用erase和insert。vector在除了末尾以外的地方插入和删除速度较慢
- *
- *
- *
- * 使用swap(num[cnt],num[i]);而不是erase和insert。使用过的就换到前面。
- * 然后每一次从下一层开始cnt+1，cnt为层数。
- * 当cnt==num.size()说明遍历到了叶节点。
- * 存储。ans.push_back(num)
- * 返回后，恢复再使用swap(num[cnt],num[i]);
- *
- * 省去了erase和insert，且不用使用单独开辟记录vector<int> cun。当前num就是当前排列。
- *
- *
- *
- * 本题使用map没啥必要。
- * 技巧：
- * 使用map代替vector<int>。索引值为数字值，值为该值出现的次数
- * 删除该数字即该数字对应的值减一。恢复该数字，即加一。
- *
- *
- *
- *
- *
+ * for循环遍历 [cnt,n-1]
+ *   选中某数字，swap 到前面
+ *   递归
+ *   恢复该数字，swap 回来
  *
  *
  */
 
+class Solution {
+private:
+    vector<vector<int>> ans;
+public:
+    void func(vector<int>& nums, vector<bool>& used, vector<int>& temp){
+        if(temp.size() == nums.size()){
+            ans.push_back(temp);
+            return;
+        }
+        // 全排列 需要顺序的。可能选了后面的再选前面的，因此[0,n-1]都得遍历，使用 used 记录用过的。
+        // 不同于 子集， 不区分顺序，每次只考虑后半部分
+        // 也可以用 swap 来节省空间，转换成只考虑后半部分
+        for(int i = 0;i < nums.size(); ++i){
+            if(!used[i]){
+                temp.push_back(nums[i]);
+                used[i] = true;
+                func(nums, used, temp);
+                used[i] = false;
+                temp.pop_back();
+            }
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        int n = nums.size();
+        vector<bool> used(n, false);
+        vector<int> temp;
+        func(nums, used, temp);
+        return ans;
+    }
+};
 
-
-#include <iostream>
-#include <vector>
-#include <map>
-
-
-
-using namespace std;
-
-
-//class Solution {
-//public:
-//    vector<vector<int>> ans;
-//    vector<int> cun;
-//    void func(vector<int> num){
-//        if(num.empty()){
-//            ans.push_back(cun);
-//            return;
-//        }
-//        for(int i=0;i<num.size();++i){
-//            cun.push_back(num[i]);
-//            num.erase(num.begin()+i);
-//            func(num);
-//            num.insert(num.begin()+i,cun.back());
-//            cun.pop_back();
-//        }
-//    }
-//    vector<vector<int>> permuteUnique(vector<int>& nums) {
-//        sort(nums.begin(),nums.end());
-//        func(nums);
-//        return ans;
-//    }
-//};
-
-//class Solution {
-//public:
-//    vector<vector<int>> ans;
-//    vector<int> cun;
-//    int n;
-//    void func(map<int, int>& m){
-//        if(cun.size()==n){
-//            ans.push_back(cun);
-//            return;
-//        }
-//        for(auto &i:m){
-//            if(i.second){
-//                --i.second;
-//                cun.push_back(i.first);
-//                func(m);
-//                cun.pop_back();
-//                ++i.second;
-//            }
-//        }
-//    }
-//    vector<vector<int>> permute(vector<int>& nums) {
-//        n = nums.size();
-//        map<int, int> m;
-//        for (int i : nums) ++m[i];
-//        func(m);
-//        return ans;
-//    }
-//};
 
 class Solution {
 public:
@@ -148,24 +100,7 @@ public:
         }
     }
     vector<vector<int>> permute(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
         func(nums,0);
         return ans;
     }
 };
-
-
-
-int main(int argc, char * argv[])
-{
-    vector<int> mm{1,2,3};
-    Solution su;
-    auto res = su.permute(mm);
-    for(auto k : res){
-        for(auto m : k){
-            cout << m << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
