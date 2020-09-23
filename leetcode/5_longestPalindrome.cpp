@@ -40,6 +40,33 @@
  *
  *  遍历各个子串长度len
  *
+ *
+ *  3. Manacher 算法
+ *  https://www.cxyxiaowu.com/2665.html
+ *
+ *  添加分隔符'#',使得奇偶情况合并
+ *  维护 p 矩阵，值为当前字符为中心的回文半径，不包含本字符。
+ *  如：
+ *      #b#a#b# 的 以 a 为中心 p[3] = 3;     p[3]的值即为原字符串 "bab"中 a 为中心的最大回文长度
+ *      #b#b# 的 以 # 为中心 p[2] = 2;       p[2]的值即为原字符串 "bb"中 bb 中间为中心的最大回文长度
+ *
+ *  遍历构造 p 矩阵，过程中维护 maxRight 和 maxRight 对应的中心 center。
+ *  maxRight 记录当前向右扩展的最远边界; center 为 maxRight 对应的回文中心
+ *
+ *  遍历过程中，借助前面已经填充好的 p。
+ *  i >= maxRight 时，无法借助之前的 p，只能使用中心扩散扫描。
+ *  i < maxRight 时，需要关注 i 关于 center 对称的位置 mirror 处的 p[mirror] 的值
+ *   1) p[mirror] < maxRight - i
+ *      p[i] = p[mirror];
+ *   2) p[mirror] == maxRight - i
+ *      p[i] >= p[mirror]; 还需要继续扩散
+ *   3）p[mirror] > maxRight - i
+ *      p[i] = maxRight - i;
+ *
+ *  结合上述几种情况，当 i < maxRight 时，p[i] = min(maxRight - i, p[mirror]); 然后在此基础继续中心扩散。
+ *
+ *  时间复杂度 O(N)
+ *  空间复杂度 O(N)
  */
 
 
@@ -126,5 +153,46 @@ public:
             }
         }
         return s.substr(start, longest);
+    }
+};
+
+// Manacher
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        int n = s.size();
+        string t = "#";
+        for(auto c:s){
+            t += c;
+            t += '#';
+        }
+        n = t.size();
+        int res = 0;
+        vector<int> p(n,0);
+        int maxR = 0;
+        int center = 0;
+        int max_p = 1;
+        int start = 0;
+        for(int i=0;i<n;i++){
+            if(i < maxR){
+                p[i] = min(maxR - i, p[2 * center - i]);
+            }
+            int left = i - (1 + p[i]);
+            int right = i + (1 + p[i]);
+            while(left >= 0 && right < n && t[left] == t[right]){
+                left--;
+                right++;
+                p[i]++;
+            }
+            if(i + p[i] > maxR){
+                maxR = i + p[i];
+                center = i;
+            }
+            if(p[i] > max_p){
+                max_p = p[i];
+                start = (i - max_p) / 2;
+            }
+        }
+        return s.substr(start, max_p);
     }
 };
