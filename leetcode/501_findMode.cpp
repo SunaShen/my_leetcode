@@ -61,6 +61,7 @@ class Solution {
 public:
     int max_count = 0;
     vector<int> res;
+    // 因为第一个 last 为 nullptr 不能自加，提前补上
     int cur_count = 1;
     TreeNode* pre = nullptr;
     void inorder(TreeNode* root){
