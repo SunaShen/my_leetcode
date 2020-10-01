@@ -306,6 +306,7 @@
 |1392|[最长快乐前缀](https://leetcode-cn.com/problems/longest-happy-prefix/)|[C++](./leetcode/1392_longestPrefix.cpp)|困难|Rabin-Karp、KMP|
 |1431|[拥有最多糖果的孩子](https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/)|[C++](./leetcode/1431_kidsWithCandies.cpp)|简单||
 |LCP 13|[寻宝](https://leetcode-cn.com/problems/xun-bao/)|[C++](./leetcode/LCP13_minimalSteps.cpp)|困难|bfs、状态压缩、dp|
+|LCP 19|[秋叶收藏集](https://leetcode-cn.com/problems/UlBDOe/)|[C++](./leetcode/LCP19_minimumOperations.cpp)|中等|dp|
 
 # 剑指offer
 | 题号 | 题目 | 题解 | 难度 | 标签 |
