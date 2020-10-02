@@ -241,6 +241,7 @@
 |733|[图像渲染](https://leetcode-cn.com/problems/flood-fill/)|[C++](./leetcode/733_floodFill.cpp)|简单|dfs、bfs|
 |739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|[C++](./leetcode/739_dailyTemperatures.cpp)|中等|单调栈|
 |753|[破解保险箱](https://leetcode-cn.com/problems/cracking-the-safe/)|[C++](./leetcode/753_crackSafe.cpp)|困难|欧拉图|
+|771|[宝石与石头](https://leetcode-cn.com/problems/jewels-and-stones/)|[C++](./leetcode/771_numJewelsInStones.cpp)|简单|哈希|
 |785|[判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/)|[C++](./leetcode/785_isBipartite.cpp)|中等|bfs、并查集|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
 |824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
