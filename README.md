@@ -200,6 +200,7 @@
 |409|[最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)|[C++](./leetcode/409_longestPalindrome.cpp)|简单||
 |410|[分割数组的最大值](https://leetcode-cn.com/problems/split-array-largest-sum/)|[C++](./leetcode/410_splitArray.cpp)|困难|dp、二分法(从结果出发)|
 |415|[字符串相加](https://leetcode-cn.com/problems/add-strings/)|[C++](./leetcode/415_addStrings.cpp)|简单||
+|416|[分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)|[C++](./leetcode/416_canPartition.cpp)|中等|背包问题|
 |424|[替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|[C++](./leetcode/424_characterReplacement.cpp)|中等|滑动窗口|
 |445|[两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)|[C++](./leetcode/445_addTwoNumbers.cpp)|中等|反向链表、栈|
 |450|[删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|[C++](./leetcode/450_deleteNode.cpp)|中等|二叉搜索树、删除节点|
@@ -245,6 +246,7 @@
 |785|[判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/)|[C++](./leetcode/785_isBipartite.cpp)|中等|bfs、并查集|
 |820|[单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)|[C++](./leetcode/820_minimumLengthEncoding.cpp)|中等|字典树、后缀|
 |824|[山羊拉丁文](https://leetcode-cn.com/problems/goat-latin/)|[C++](./leetcode/824_toGoatLatin.cpp)|简单|字符串处理|
+|834|[树中距离之和](https://leetcode-cn.com/problems/sum-of-distances-in-tree/)|[C++](./leetcode/834_sumOfDistancesInTree.cpp)|困难|树形 dp|
 |836|[矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)|[C++](./leetcode/836_isRectangleOverlap.cpp)|简单|考虑不重叠|
 |837|[新21点](https://leetcode-cn.com/problems/new-21-game/)|[C++](./leetcode/837_new21Game.cpp)|中等|dp|
 |841|[钥匙和房间](https://leetcode-cn.com/problems/keys-and-rooms/)|[C++](./leetcode/841_canVisitAllRooms.cpp)|中等|dfs、并查集|
