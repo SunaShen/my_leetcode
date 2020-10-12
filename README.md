@@ -217,6 +217,7 @@
 |509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[C++](./leetcode/509_fib.cpp)|简单|斐波那契数|
 |518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|[C++](./leetcode/518_change.cpp)|中等|dp、循环顺序|
 |529|[扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)|[C++](./leetcode/529_updateBoard.cpp)|中等|dfs|
+|530|[二叉搜索树的最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)|[C++](./leetcode/530_getMinimumDifference.cpp)|简单|中序遍历|
 |535|[TinyURL 的加密与解密](https://leetcode-cn.com/problems/encode-and-decode-tinyurl/)|[C++](./leetcode/535_TinyURL.cpp)|中等|62进制|
 |538|[把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)|[C++](./leetcode/538_convertBST.cpp)|简单|中序遍历|
 |542|[01 矩阵](https://leetcode-cn.com/problems/01-matrix/)|[C++](./leetcode/542_updateMatrix.cpp)|中等|bfs、dp|
