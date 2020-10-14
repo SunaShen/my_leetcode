@@ -267,7 +267,7 @@
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |990|[等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)|[C++](./leetcode/990_equationsPossible.cpp)|中等|并查集|
 |994|[腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)|[C++](./leetcode/994_orangesRotting.cpp)|简单|bfs|
-|999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[c++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
+|999|[车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/)|[C++](./leetcode/999_numRookCaptures.cpp)|简单|模拟|
 |1002|[查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)|[C++](./leetcode/1002_commonChars.cpp)|简单|计数|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
 |1014|[最佳观光组合](https://leetcode-cn.com/problems/best-sightseeing-pair/)|[C++](./leetcode/1014_maxScoreSightseeingPair.cpp)|中等||
