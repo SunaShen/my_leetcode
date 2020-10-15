@@ -99,6 +99,7 @@
 |112|[路径总和](https://leetcode-cn.com/problems/path-sum/)|[C++](./leetcode/112_hasPathSum.cpp)|简单||
 |113|[路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)|[C++](./leetcode/113_pathSum.cpp)|中等|dfs|
 |114|[二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|[C++](./leetcode/114_flatten.cpp)|中等|二叉树、链表|
+|116|[填充每个节点的下一个右侧节点指针](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/)|[C++](./leetcode/116_connect.cpp)|中等|层序遍历|
 |117|[填充每个节点的下一个右侧节点指针 II](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/)|[C++](./leetcode/117_connect.cpp)|中等|层序遍历|
 |118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[C++](./leetcode/118_generate.cpp)|简单|dp|
 |120|[三角形最小路径和](https://leetcode-cn.com/problems/triangle/)|[C++](./leetcode/120_minimumTotal.cpp)|中等|dp|
