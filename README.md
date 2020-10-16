@@ -264,6 +264,7 @@
 |958|[二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)|[C++](./leetcode/958_isCompleteTree.cpp)|中等|层序遍历|
 |968|[监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)|[C++](./leetcode/968_minCameraCover.cpp)|困难|树的状态转移|
 |974|[和可被 K 整除的子数组](https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/)|[C++](./leetcode/974_subarraysDivByK.cpp)|中等|前缀和、线性同余|
+|977|[有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)|[C++](./leetcode/977_sortedSquares.cpp)|简单|双指针|
 |983|[最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/)|[C++](./leetcode/983_mincostTickets.cpp)|中等|dp|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[C++](./leetcode/988_smallestFromLeaf.cpp)|中等|dfs|
 |990|[等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)|[C++](./leetcode/990_equationsPossible.cpp)|中等|并查集|
