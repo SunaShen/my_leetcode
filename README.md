@@ -49,6 +49,7 @@
 |48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|[C++](./leetcode/48_rotate.cpp)|中等|转置+反转、找规律|
 |50|[Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|[C++](./leetcode/50_myPow.cpp)|中等|二分法、快速幂|
 |51|[N皇后](https://leetcode-cn.com/problems/n-queens/)|[C++](./leetcode/51_solveNQueens.cpp)|困难|回溯法|
+|52|[N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)|[C++](./leetcode/52_totalNQueens.cpp)|困难|回溯法|
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[C++](./leetcode/53_maxSubArray.cpp)|简单|dp、贪心|
 |54|[螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)|[C++](./leetcode/54_spiralOrder.cpp)|中等|模拟边界|
 |55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)|[C++](./leetcode/55_canJump.cpp)|中等|dp、贪心|
