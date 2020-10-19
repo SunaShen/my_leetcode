@@ -253,6 +253,7 @@
 |836|[矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)|[C++](./leetcode/836_isRectangleOverlap.cpp)|简单|考虑不重叠|
 |837|[新21点](https://leetcode-cn.com/problems/new-21-game/)|[C++](./leetcode/837_new21Game.cpp)|中等|dp|
 |841|[钥匙和房间](https://leetcode-cn.com/problems/keys-and-rooms/)|[C++](./leetcode/841_canVisitAllRooms.cpp)|中等|dfs、并查集|
+|844|[比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)|[C++](./leetcode/844_backspaceCompare.cpp)|简单|双指针|
 |860|[柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)|[C++](./leetcode/860_lemonadeChange.cpp)|简单|模拟|
 |876|[链表的中间节点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)|[C++](./leetcode/876_middleNode.cpp)|简单|快慢指针|
 |877|[石子游戏](https://leetcode-cn.com/problems/stone-game/)|[C++](./leetcode/877_stoneGame.cpp)|中等|dp、博弈|
