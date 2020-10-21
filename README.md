@@ -261,6 +261,7 @@
 |892|[三维形体的表面积](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)|[C++](./leetcode/892_surfaceArea.cpp)|简单|加法和减法|
 |912|[排序数组](https://leetcode-cn.com/problems/sort-an-array/)|[C++](./leetcode/912_sortArray.cpp)|中等|各种排序算法|
 |914|[卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)|[C++](./leetcode/914_hasGroupsSizeX.cpp)|简单|公约数|
+|925|[长按键入](https://leetcode-cn.com/problems/long-pressed-name/)|[C++](./leetcode/925_isLongPressedName.cpp)|简单|双指针|
 |945|[使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)|[C++](./leetcode/945_minIncrementForUnique.cpp)|中等|计数法、排序|
 |946|[验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)|[C++](./leetcode/946_validateStackSequences.cpp)|中等|模拟栈|
 |958|[二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)|[C++](./leetcode/958_isCompleteTree.cpp)|中等|层序遍历|
