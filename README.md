@@ -156,6 +156,7 @@
 |230|[二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)|[C++](./leetcode/230_kthSmallest.cpp)|中等|中序遍历+提前终止|
 |231|[2的幂](https://leetcode-cn.com/problems/power-of-two/)|[C++](./leetcode/231_isPowerOfTwo.cpp)|简单|移位|
 |233|[数字 1 的个数](https://leetcode-cn.com/problems/number-of-digit-one/)|[C++](./leetcode/233_countDigitOne.cpp)|困难|公式、递归|
+|234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|[C++](./leetcode/234_isPalindrome.cpp)|简单|快慢指针、链表逆序|
 |235|[二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[C++](./leetcode/235_lowestCommonAncestor.cpp)|简单|LCA|
 |236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](./leetcode/236_lowestCommonAncestor.cpp)|中等|递归(后序遍历)|
 |238|[除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/)|[C++](./leetcode/238_productExceptSelf.cpp)|中等|前/后缀乘积|
