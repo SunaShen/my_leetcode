@@ -278,6 +278,7 @@
 |1002|[查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)|[C++](./leetcode/1002_commonChars.cpp)|简单|计数|
 |1013|[将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)|[C++](./leetcode/1013_canThreePartsEqualSum.cpp)|简单||
 |1014|[最佳观光组合](https://leetcode-cn.com/problems/best-sightseeing-pair/)|[C++](./leetcode/1014_maxScoreSightseeingPair.cpp)|中等||
+|1024|[视频拼接](https://leetcode-cn.com/problems/video-stitching/)|[C++](./leetcode/1024_videoStitching.cpp)|中等|dp、贪心|
 |1025|[除数博弈](https://leetcode-cn.com/problems/divisor-game/)|[C++](./leetcode/1025_divisorGame.cpp)|简单|博弈论|
 |1028|[从先序遍历还原二叉树](https://leetcode-cn.com/problems/recover-a-tree-from-preorder-traversal/)|[C++](./leetcode/1028_recoverFromPreorder.cpp)|困难|栈|
 |1038|[从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)|[C++](./leetcode/1038_bstToGst.cpp)|中等|中序遍历|
